@@ -1,0 +1,3958 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <!-- <base href="/"> -->
+  <title>Main</title>
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Template Basic Images Start -->
+  <!--	<meta property="og:image" content="path/to/image.jpg">-->
+  <link rel="icon" href="img/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+  <!-- Template Basic Images End -->
+  <!-- Custom Browsers Color Start -->
+  <meta name="theme-color" content="#145ce6">
+  <!-- Custom Browsers Color End -->
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+  <header class="big main">
+    <div class="container">
+      <div class="header-top">
+        <div class="row no-gutters col-12 header-top_wrap">
+          <div class="logo">
+            <img src="img/update/logo.png" alt="Logotip">
+          </div>
+          <nav class="menu">
+            <ul>
+              <li class="active"><a href="#">ГОРЯЩИЕ ТУРЫ</a><hr></li>
+              <li><a href="#">СТРАНЫ</a><hr></li>
+              <li><a href="#">ИНФОРМАЦИЯ</a><hr></li>
+              <li><a href="#">КОНТАКТЫ</a><hr></li>
+            </ul>
+            <hr>
+          </nav>
+          <nav class="menu-resp order-sm-1">
+            <a class="menu-btn">
+              <span></span>
+            </a><br>
+            <ul>
+              <li class="active"><a href="#">ГОРЯЩИЕ ТУРЫ</a></li>
+              <li><a href="#">СТРАНЫ</a></li>
+              <li><a href="#">ИНФОРМАЦИЯ</a></li>
+              <li><a href="#">КОНТАКТЫ</a></li>
+            </ul>
+          </nav>
+          <div class="contacts">
+            <a href="#">
+              <img src="img/update/phone.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="img/update/viber.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="img/update/telegram.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="text">
+        <div class="first">
+          <span>Закажи тур не<br>выходя из дома</span>
+        </div>
+        <hr>
+        <div class="second">
+          <span>онлайн Бронирование 24/7</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="filter-overlay"></div>
+  <section class="filter-block">
+    <div class="container">
+      <div class="tabs">
+        <ul class="row no-gutters justify-content-center col-12">
+          <li class="active">
+            <a href="#tab-1">Пакетные туры</a>
+            <hr>
+          </li>
+          <li >
+            <a href="#tab-2">ЭКСКУРСИОННЫЕ ТУРЫ</a>
+            <hr>
+          </li>
+          <li>
+            <a href="#tab-3">ЧАРТЕРЫ</a>
+            <hr>
+          </li>
+        </ul>
+        <hr>
+        <div id="tabs">
+          <div class="tab" id="tab-1">
+            <form action="#">
+              <div class="row no-gutters justify-content-between">
+                <div class="input">
+                  <div class="title">
+                    <span>КУДА</span>
+                  </div>
+                  <div class="input-wrap">
+                    <input type="text" value="Выберите страну">
+                    <span class="arrow fa fa-angle-down"></span>
+                  </div>
+                </div>
+                <div class="input">
+                  <div class="title">
+                    <span>дата отправления</span>
+                  </div>
+                  <div class="date">
+                    <input type="date"><img src="img/cal.png" class="cal1"><img class="cal2" src="img/cal.png">
+                    <input type="date">
+                  </div>
+                </div>
+                <div class="input">
+                  <div class="title">
+                    <span>транспорт</span>
+                  </div>
+                  <select name="" id="">
+                    <option value="">Любой</option>
+                    <option value="">Любой</option>
+                    <option value="">Любой</option>
+                  </select>
+                </div>
+                <div class="input">
+                  <div class="title">
+                    <span>откуда</span>
+                  </div>
+                  <select name="" id="">
+                    <option value="">Киев</option>
+                    <option value="">Киев</option>
+                    <option value="">Киев</option>
+                  </select>
+                </div>
+                <div class="input text-center col-md-12 col-lg-auto">
+                  <input type="submit" value="НАЙТИ">
+                  <span class="extend">Расширенный поиск</span>
+                </div>
+              </div>
+              <div class="extended-search">
+                <div class="row no-gutters justify-content-between">
+                  <div class="col-md-auto col-sm-12 count-tourists">
+                    <span class="title">КОЛИЧЕСТВО ТУРИСТОВ</span>
+                    <div class="row no-gutters">
+                      <div class="col-sm-auto col-12 count-old input-block">
+                        <a href="#" class="minus-people">-</a>
+                        <span><span class="value-num">2</span>&nbsp;<span class="value-text">взрослых</span></span>
+                        <a href="#" class="plus-people">+</a>
+                        <input type="number" hidden name="">
+                      </div>
+                      <div class="col-sm-auto col-12 count-children input-block">
+                        <a href="#" class="minus-people">-</a>
+                        <span><span class="value-num"></span>&nbsp;<span class="value-text">без детей</span></span>
+                        <a href="#" class="plus-people">+</a>
+                        <input type="number" hidden name="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-auto col-sm-12 count-stars">
+                    <span class="title">КАТЕГОРИЯ ОТЕЛЯ</span>
+                    <div class="row no-gutters">
+                      <div class="col-auto stars">
+                        <span class="stars-wrap" dir="rtl">
+                          <input type="radio" id="star-5-1" name="count-stars" value="1">
+                          <label for="star-5-1"><span class="fa fa-star"></span></label>
+                          <input type="radio" id="star-4-1" name="count-stars" value="2">
+                          <label for="star-4-1"><span class="fa fa-star"></span></label>
+                          <input type="radio" id="star-3-1" name="count-stars" value="3">
+                          <label for="star-3-1"><span class="fa fa-star"></span></label>
+                          <input type="radio" id="star-2-1" name="count-stars" value="4">
+                          <label for="star-2-1"><span class="fa fa-star"></span></label>
+                          <input type="radio" id="star-1-1" name="count-stars" value="5">
+                          <label for="star-1-1"><span class="fa fa-star"></span></label>
+                        </span>
+                        <span class="val-wrap"><span class="val-stars">4</span>&nbsp;<span class="text-stars">звезды</span></span>
+                        <input type="number" hidden name="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-auto col-6 select-driveway">
+                    <span class="title">ПРОЕЗД</span>
+                    <div class="row no-gutters">
+                      <div class="col-auto driveway">
+                        <select name="" id="">
+                          <option value="" selected>Включен</option>
+                          <option value="">Включен</option>
+                          <option value="">Включен</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-auto col-6 select-food">
+                    <span class="title">ПИТАНИЕ</span>
+                    <div class="row no-gutters">
+                      <div class="col-auto food">
+                        <select name="" id="">
+                          <option value="" selected>Все включено</option>
+                          <option value="">Все включено</option>
+                          <option value="">Все включено</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row no-gutters justify-content-between">
+                  <div class="col-lg-auto col-md-12 price-range">
+                    <span class="title">ДИАПАЗОН ЦЕН ЗА ВЕСЬ ТУР</span>
+                    <div class="row no-gutters">
+                      <div class="col-md-auto col-6 range-wrap order-1 order-md-0">
+                        <input type="number" hidden value="100000">
+                        <span class="price"><span class="val-price">100 000</span><span class="val-uah">грн</span></span>
+                      </div>
+                      <div class="col-md-auto col-sm-12 range-wrap">
+                        <div class="range-block">
+                          <div class="slider-range"></div>
+                          <span class="start">0</span>
+                          <span class="end">200 000</span>
+                        </div>
+                      </div>
+                      <div class="col-md-auto col-6 range-wrap order-2 order-md-0">
+                        <span class="price"><span class="val-price">150 000</span><span class="val-uah">грн</span></span>
+                        <input type="number" hidden value="150000">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rating-hotel col-lg-auto col-sm-12">
+                    <span class="title">Рейтинг отеля</span>
+                    <div class="row no-gutters">
+                      <div class="col-md-12 col-lg-auto">
+                        <select name="" id="">
+                          <option value="" selected>8 из 10</option>
+                          <option value="" selected>8 из 10</option>
+                          <option value="" selected>8 из 10</option>
+                          <option value="" selected>8 из 10</option>
+                        </select>
+                      </div>
+                      <div class="col-12 col-lg-auto reset">
+                        <span>Сбросить все фильтры</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="tab" id="tab-2">
+            <form action="#">
+              <div class="row no-gutters justify-content-between">
+                <div class="input">
+                  <div class="title">
+                    <span>КУДА</span>
+                  </div>
+                  <div class="input-wrap">
+                    <input type="text" value="Выберите страну">
+                    <span class="arrow fa fa-angle-down"></span>
+                  </div>
+                </div>
+                <div class="input">
+                  <div class="title">
+                    <span>дата отправления</span>
+                  </div>
+                  <div class="date">
+                    <input type="date"><img src="img/cal.png" class="cal1"><img class="cal2" src="img/cal.png">
+                    <input type="date">
+                  </div>
+                </div>
+                <div class="input">
+                  <div class="title">
+                    <span>транспорт</span>
+                  </div>
+                  <select name="" id="">
+                    <option value="">Любой</option>
+                    <option value="">Любой</option>
+                    <option value="">Любой</option>
+                  </select>
+                </div>
+                <div class="input">
+                  <div class="title">
+                    <span>откуда</span>
+                  </div>
+                  <select name="" id="">
+                    <option value="">Киев</option>
+                    <option value="">Киев</option>
+                    <option value="">Киев</option>
+                  </select>
+                </div>
+                <div class="input text-center col-md-12 col-lg-auto">
+                  <input type="submit" value="НАЙТИ">
+                  <span class="extend">Расширенный поиск</span>
+                </div>
+              </div>
+              <div class="extended-search">
+                <div class="row no-gutters justify-content-between">
+                  <div class="col-md-auto col-sm-12 count-tourists">
+                    <span class="title">КОЛИЧЕСТВО ТУРИСТОВ</span>
+                    <div class="row no-gutters">
+                      <div class="col-sm-auto col-12 count-old input-block">
+                        <a href="#" class="minus-people">-</a>
+                        <span><span class="value-num">2</span>&nbsp;<span class="value-text">взрослых</span></span>
+                        <a href="#" class="plus-people">+</a>
+                        <input type="number" hidden name="">
+                      </div>
+                      <div class="col-sm-auto col-12 count-children input-block">
+                        <a href="#" class="minus-people">-</a>
+                        <span><span class="value-num"></span>&nbsp;<span class="value-text">без детей</span></span>
+                        <a href="#" class="plus-people">+</a>
+                        <input type="number" hidden name="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-auto col-sm-12 count-stars">
+                    <span class="title">КАТЕГОРИЯ ОТЕЛЯ</span>
+                    <div class="row no-gutters">
+                      <div class="col-auto stars">
+                        <span class="stars-wrap" dir="rtl">
+                          <input type="radio" id="star-5-1" name="count-stars" value="1">
+                          <label for="star-5-1"><span class="fa fa-star"></span></label>
+                          <input type="radio" id="star-4-1" name="count-stars" value="2">
+                          <label for="star-4-1"><span class="fa fa-star"></span></label>
+                          <input type="radio" id="star-3-1" name="count-stars" value="3">
+                          <label for="star-3-1"><span class="fa fa-star"></span></label>
+                          <input type="radio" id="star-2-1" name="count-stars" value="4">
+                          <label for="star-2-1"><span class="fa fa-star"></span></label>
+                          <input type="radio" id="star-1-1" name="count-stars" value="5">
+                          <label for="star-1-1"><span class="fa fa-star"></span></label>
+                        </span>
+                        <span class="val-wrap"><span class="val-stars">4</span>&nbsp;<span class="text-stars">звезды</span></span>
+                        <input type="number" hidden name="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-auto col-6 select-driveway">
+                    <span class="title">ПРОЕЗД</span>
+                    <div class="row no-gutters">
+                      <div class="col-auto driveway">
+                        <select name="" id="">
+                          <option value="" selected>Включен</option>
+                          <option value="">Включен</option>
+                          <option value="">Включен</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-auto col-6 select-food">
+                    <span class="title">ПИТАНИЕ</span>
+                    <div class="row no-gutters">
+                      <div class="col-auto food">
+                        <select name="" id="">
+                          <option value="" selected>Все включено</option>
+                          <option value="">Все включено</option>
+                          <option value="">Все включено</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row no-gutters justify-content-between">
+                  <div class="col-lg-auto col-md-12 price-range">
+                    <span class="title">ДИАПАЗОН ЦЕН ЗА ВЕСЬ ТУР</span>
+                    <div class="row no-gutters">
+                      <div class="col-md-auto col-6 range-wrap order-1 order-md-0">
+                        <input type="number" hidden value="100000">
+                        <span class="price"><span class="val-price">100 000</span><span class="val-uah">грн</span></span>
+                      </div>
+                      <div class="col-md-auto col-sm-12 range-wrap">
+                        <div class="range-block">
+                          <div class="slider-range"></div>
+                          <span class="start">0</span>
+                          <span class="end">200 000</span>
+                        </div>
+                      </div>
+                      <div class="col-md-auto col-6 range-wrap order-2 order-md-0">
+                        <span class="price"><span class="val-price">150 000</span><span class="val-uah">грн</span></span>
+                        <input type="number" hidden value="150000">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rating-hotel col-lg-auto col-sm-12">
+                    <span class="title">Рейтинг отеля</span>
+                    <div class="row no-gutters">
+                      <div class="col-md-12 col-lg-auto">
+                        <select name="" id="">
+                          <option value="" selected>8 из 10</option>
+                          <option value="" selected>8 из 10</option>
+                          <option value="" selected>8 из 10</option>
+                          <option value="" selected>8 из 10</option>
+                        </select>
+                      </div>
+                      <div class="col-12 col-lg-auto reset">
+                        <span>Сбросить все фильтры</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="tab" id="tab-3">
+            <form action="#">
+              <div class="row no-gutters justify-content-between">
+                <div class="input">
+                  <div class="title">
+                    <span>КУДА</span>
+                  </div>
+                  <div class="input-wrap">
+                    <input type="text" value="Выберите страну">
+                    <span class="arrow fa fa-angle-down"></span>
+                  </div>
+                </div>
+                <div class="input">
+                  <div class="title">
+                    <span>дата отправления</span>
+                  </div>
+                  <div class="date">
+                    <input type="date"><img src="img/cal.png" class="cal1"><img class="cal2" src="img/cal.png">
+                    <input type="date">
+                  </div>
+                </div>
+                <div class="input">
+                  <div class="title">
+                    <span>транспорт</span>
+                  </div>
+                  <select name="" id="">
+                    <option value="">Любой</option>
+                    <option value="">Любой</option>
+                    <option value="">Любой</option>
+                  </select>
+                </div>
+                <div class="input">
+                  <div class="title">
+                    <span>откуда</span>
+                  </div>
+                  <select name="" id="">
+                    <option value="">Киев</option>
+                    <option value="">Киев</option>
+                    <option value="">Киев</option>
+                  </select>
+                </div>
+                <div class="input text-center col-md-12 col-lg-auto">
+                  <input type="submit" value="НАЙТИ">
+                  <span class="extend">Расширенный поиск</span>
+                </div>
+              </div>
+              <div class="extended-search">
+                <div class="row no-gutters justify-content-between">
+                  <div class="col-md-auto col-sm-12 count-tourists">
+                    <span class="title">КОЛИЧЕСТВО ТУРИСТОВ</span>
+                    <div class="row no-gutters">
+                      <div class="col-sm-auto col-12 count-old input-block">
+                        <a href="#" class="minus-people">-</a>
+                        <span><span class="value-num">2</span>&nbsp;<span class="value-text">взрослых</span></span>
+                        <a href="#" class="plus-people">+</a>
+                        <input type="number" hidden name="">
+                      </div>
+                      <div class="col-sm-auto col-12 count-children input-block">
+                        <a href="#" class="minus-people">-</a>
+                        <span><span class="value-num"></span>&nbsp;<span class="value-text">без детей</span></span>
+                        <a href="#" class="plus-people">+</a>
+                        <input type="number" hidden name="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-auto col-sm-12 count-stars">
+                    <span class="title">КАТЕГОРИЯ ОТЕЛЯ</span>
+                    <div class="row no-gutters">
+                      <div class="col-auto stars">
+                        <span class="stars-wrap" dir="rtl">
+                          <input type="radio" id="star-5-1" name="count-stars" value="1">
+                          <label for="star-5-1"><span class="fa fa-star"></span></label>
+                          <input type="radio" id="star-4-1" name="count-stars" value="2">
+                          <label for="star-4-1"><span class="fa fa-star"></span></label>
+                          <input type="radio" id="star-3-1" name="count-stars" value="3">
+                          <label for="star-3-1"><span class="fa fa-star"></span></label>
+                          <input type="radio" id="star-2-1" name="count-stars" value="4">
+                          <label for="star-2-1"><span class="fa fa-star"></span></label>
+                          <input type="radio" id="star-1-1" name="count-stars" value="5">
+                          <label for="star-1-1"><span class="fa fa-star"></span></label>
+                        </span>
+                        <span class="val-wrap"><span class="val-stars">4</span>&nbsp;<span class="text-stars">звезды</span></span>
+                        <input type="number" hidden name="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-auto col-6 select-driveway">
+                    <span class="title">ПРОЕЗД</span>
+                    <div class="row no-gutters">
+                      <div class="col-auto driveway">
+                        <select name="" id="">
+                          <option value="" selected>Включен</option>
+                          <option value="">Включен</option>
+                          <option value="">Включен</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-auto col-6 select-food">
+                    <span class="title">ПИТАНИЕ</span>
+                    <div class="row no-gutters">
+                      <div class="col-auto food">
+                        <select name="" id="">
+                          <option value="" selected>Все включено</option>
+                          <option value="">Все включено</option>
+                          <option value="">Все включено</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row no-gutters justify-content-between">
+                  <div class="col-lg-auto col-md-12 price-range">
+                    <span class="title">ДИАПАЗОН ЦЕН ЗА ВЕСЬ ТУР</span>
+                    <div class="row no-gutters">
+                      <div class="col-md-auto col-6 range-wrap order-1 order-md-0">
+                        <input type="number" hidden value="100000">
+                        <span class="price"><span class="val-price">100 000</span><span class="val-uah">грн</span></span>
+                      </div>
+                      <div class="col-md-auto col-sm-12 range-wrap">
+                        <div class="range-block">
+                          <div class="slider-range"></div>
+                          <span class="start">0</span>
+                          <span class="end">200 000</span>
+                        </div>
+                      </div>
+                      <div class="col-md-auto col-6 range-wrap order-2 order-md-0">
+                        <span class="price"><span class="val-price">150 000</span><span class="val-uah">грн</span></span>
+                        <input type="number" hidden value="150000">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rating-hotel col-lg-auto col-sm-12">
+                    <span class="title">Рейтинг отеля</span>
+                    <div class="row no-gutters">
+                      <div class="col-md-12 col-lg-auto">
+                        <select name="" id="">
+                          <option value="" selected>8 из 10</option>
+                          <option value="" selected>8 из 10</option>
+                          <option value="" selected>8 из 10</option>
+                          <option value="" selected>8 из 10</option>
+                        </select>
+                      </div>
+                      <div class="col-12 col-lg-auto reset">
+                        <span>Сбросить все фильтры</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="countries">
+          <div class="title">
+            <span>Выбор страны</span>
+            <img class="countries-close" src="img/update/countries/close.png" alt="">
+          </div>
+          <div class="countries-wrap">
+            <div class="countries-column">
+              <div class="popular-countries__title">
+                <span>Популярные города</span>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/India.png" alt="">
+                  <span>Индия</span>
+                </a>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Bolgaria.png" alt="">
+                  <span>Болгария</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/visa.png" alt="">
+                <div class="promt-hidden">
+                  <span>Виза</span>
+                </div>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/India.png" alt="">
+                  <span>Индия</span>
+                </a>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Bahrein.png" alt="">
+                  <span>Бахрейн</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/o-plane.png" alt="">
+                <div class="promt-hidden">
+                  <span>По прилету</span>
+                </div>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/India.png" alt="">
+                  <span>Индия</span>
+                </a>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Bolgaria.png" alt="">
+                  <span>Болгария</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/visa.png" alt="">
+                <div class="promt-hidden">
+                  <span>Виза</span>
+                </div>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Bolgaria.png" alt="">
+                  <span>Болгария</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/visa.png" alt="">
+                <div class="promt-hidden">
+                  <span>Виза</span>
+                </div>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Belarus.png" alt="">
+                  <span>Беларусь</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/shengen.png" alt="">
+                <div class="promt-hidden">
+                  <span>Шенген</span>
+                </div>
+              </div>
+            </div>
+            <div class="countries-column">
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Bolgaria.png" alt="">
+                  <span>Болгария</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/visa.png" alt="">
+                <div class="promt-hidden">
+                  <span>Виза</span>
+                </div>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Bolgaria.png" alt="">
+                  <span>Болгария</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/visa.png" alt="">
+                <div class="promt-hidden">
+                  <span>Виза</span>
+                </div>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/India.png" alt="">
+                  <span>Индия</span>
+                </a>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Bahrein.png" alt="">
+                  <span>Бахрейн</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/o-plane.png" alt="">
+                <div class="promt-hidden">
+                  <span>По прилету</span>
+                </div>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Bolgaria.png" alt="">
+                  <span>Болгария</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/visa.png" alt="">
+                <div class="promt-hidden">
+                  <span>Виза</span>
+                </div>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/India.png" alt="">
+                  <span>Индия</span>
+                </a>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Bahrein.png" alt="">
+                  <span>Бахрейн</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/o-plane.png" alt="">
+                <div class="promt-hidden">
+                  <span>По прилету</span>
+                </div>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Belarus.png" alt="">
+                  <span>Беларусь</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/shengen.png" alt="">
+                <div class="promt-hidden">
+                  <span>Шенген</span>
+                </div>
+              </div>
+            </div>
+            <div class="countries-column">
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Bolgaria.png" alt="">
+                  <span>Болгария</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/visa.png" alt="">
+                <div class="promt-hidden">
+                  <span>Виза</span>
+                </div>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Bahrein.png" alt="">
+                  <span>Бахрейн</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/o-plane.png" alt="">
+                <div class="promt-hidden">
+                  <span>По прилету</span>
+                </div>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/India.png" alt="">
+                  <span>Индия</span>
+                </a>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Bahrein.png" alt="">
+                  <span>Бахрейн</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/o-plane.png" alt="">
+                <div class="promt-hidden">
+                  <span>По прилету</span>
+                </div>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/India.png" alt="">
+                  <span>Индия</span>
+                </a>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Bahrein.png" alt="">
+                  <span>Бахрейн</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/o-plane.png" alt="">
+                <div class="promt-hidden">
+                  <span>По прилету</span>
+                </div>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Belarus.png" alt="">
+                  <span>Беларусь</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/shengen.png" alt="">
+                <div class="promt-hidden">
+                  <span>Шенген</span>
+                </div>
+              </div>
+            </div>
+            <div class="countries-column">
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Bolgaria.png" alt="">
+                  <span>Болгария</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/visa.png" alt="">
+                <div class="promt-hidden">
+                  <span>Виза</span>
+                </div>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Belarus.png" alt="">
+                  <span>Беларусь</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/shengen.png" alt="">
+                <div class="promt-hidden">
+                  <span>Шенген</span>
+                </div>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Bolgaria.png" alt="">
+                  <span>Болгария</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/visa.png" alt="">
+                <div class="promt-hidden">
+                  <span>Виза</span>
+                </div>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Bahrein.png" alt="">
+                  <span>Бахрейн</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/o-plane.png" alt="">
+                <div class="promt-hidden">
+                  <span>По прилету</span>
+                </div>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Bolgaria.png" alt="">
+                  <span>Болгария</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/visa.png" alt="">
+                <div class="promt-hidden">
+                  <span>Виза</span>
+                </div>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Bolgaria.png" alt="">
+                  <span>Болгария</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/visa.png" alt="">
+                <div class="promt-hidden">
+                  <span>Виза</span>
+                </div>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Bolgaria.png" alt="">
+                  <span>Болгария</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/visa.png" alt="">
+                <div class="promt-hidden">
+                  <span>Виза</span>
+                </div>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Bahrein.png" alt="">
+                  <span>Бахрейн</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/o-plane.png" alt="">
+                <div class="promt-hidden">
+                  <span>По прилету</span>
+                </div>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Bolgaria.png" alt="">
+                  <span>Болгария</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/visa.png" alt="">
+                <div class="promt-hidden">
+                  <span>Виза</span>
+                </div>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Bahrein.png" alt="">
+                  <span>Бахрейн</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/o-plane.png" alt="">
+                <div class="promt-hidden">
+                  <span>По прилету</span>
+                </div>
+              </div>
+            </div>
+            <div class="countries-column">
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Bolgaria.png" alt="">
+                  <span>Болгария</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/visa.png" alt="">
+                <div class="promt-hidden">
+                  <span>Виза</span>
+                </div>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Bolgaria.png" alt="">
+                  <span>Болгария</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/visa.png" alt="">
+                <div class="promt-hidden">
+                  <span>Виза</span>
+                </div>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Belarus.png" alt="">
+                  <span>Беларусь</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/shengen.png" alt="">
+                <div class="promt-hidden">
+                  <span>Шенген</span>
+                </div>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Bahrein.png" alt="">
+                  <span>Бахрейн</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/o-plane.png" alt="">
+                <div class="promt-hidden">
+                  <span>По прилету</span>
+                </div>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Bolgaria.png" alt="">
+                  <span>Болгария</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/visa.png" alt="">
+                <div class="promt-hidden">
+                  <span>Виза</span>
+                </div>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Bahrein.png" alt="">
+                  <span>Бахрейн</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/o-plane.png" alt="">
+                <div class="promt-hidden">
+                  <span>По прилету</span>
+                </div>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Bahrein.png" alt="">
+                  <span>Бахрейн</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/o-plane.png" alt="">
+                <div class="promt-hidden">
+                  <span>По прилету</span>
+                </div>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Bolgaria.png" alt="">
+                  <span>Болгария</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/visa.png" alt="">
+                <div class="promt-hidden">
+                  <span>Виза</span>
+                </div>
+              </div>
+              <div class="countries-item">
+                <a href="#">
+                  <img src="img/update/countries/Bahrein.png" alt="">
+                  <span>Бахрейн</span>
+                </a>
+                <img class="icon-promt icon-promt_shengen" src="img/update/countries/o-plane.png" alt="">
+                <div class="promt-hidden">
+                  <span>По прилету</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="opportunities">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="opportunities-slider col-12">
+          <div class="slider-item" style="background-image: url(img/update/reklama.png);">
+          </div>
+          <div class="slider-item" style="background-image: url(img/update/reklama.png);">
+          </div>
+          <div class="slider-item" style="background-image: url(img/update/reklama.png);">
+          </div>
+          <div class="slider-item" style="background-image: url(img/update/reklama.png);">
+          </div>
+        </div>
+       <div class="opportunities-controls">
+          <div class="opportunities-control-left">
+            <hr>
+            <span class="fa fa-chevron-left"></span>
+          </div>
+          <div class="opportunities-control-right">
+            <span class="fa fa-chevron-right"></span>
+            <hr>
+          </div>
+        </div>
+      </div>
+      <div class="row no-gutters info-blocks">
+        <div class="col-lg-3 col-md-6">
+          <div class="info-block text-center">
+            <div class="info-img">
+              <img src="img/update/adv-1.png" alt="">
+            </div>
+            <div class="info-title">
+              <span>Найти тур мечты из 25 <br>миллионов вариантов</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="info-block text-center">
+            <div class="info-img">
+              <img src="img/update/adv-2.png" alt="">
+            </div>
+            <div class="info-title">
+              <span>Получи лучшую цену <br>от 29 операторов</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="info-block text-center">
+            <div class="info-img">
+              <img src="img/update/adv-3.png" alt="">
+            </div>
+            <div class="info-title">
+              <span>Плати онлайн с visa, <br>mastercard, Приват24</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="info-block text-center">
+            <div class="info-img">
+              <img src="img/update/adv-4.png" alt="">
+            </div>
+            <div class="info-title">
+              <span>получи документы на <br>email и едь в отпуск!<br></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="hot-tours">
+    <div class="container title">
+      <div class="row no-gutters justify-content-center">
+        <div class="title">
+          <span class="blue">Горящие</span>
+          <span class="orange">туры</span>
+        </div>
+        <div class="w-100"></div>
+        <hr>
+        <div class="w-100"></div>
+        <span class="best">Лучшие предложения</span>
+      </div>
+    </div>
+    <div class="nav-carts">
+    	<div class="container">
+        	<div class="row no-gutters">
+        		<ul>
+              <li class="nav-carts__item">
+               <a href="#">Харькова</a>
+              </li>
+              <li class="nav-carts__item">
+               <a href="#">Киева</a>
+              </li>
+              <li class="nav-carts__item">
+               <a href="#">Херсона</a>
+              </li>
+              <li class="nav-carts__item">
+               <a href="#">Запорожья</a>
+              </li>
+              <li class="nav-carts__item">
+               <a href="#">Днепра</a>
+              </li>
+              <li class="nav-carts__item">
+               <a href="#">Львова</a>
+              </li>
+              <li class="nav-carts__item">
+               <a href="#">Одессы</a>
+              </li>
+              <li class="nav-carts__item">
+               <a href="#">Ровно</a>
+              </li>
+              <li class="nav-carts__item">
+               <a href="#">Херсона</a>
+              </li>
+              <li class="nav-carts__item">
+               <a href="#">Винницы</a>
+              </li>
+              <li class="nav-carts__item">
+               <a href="#">Кривого рога</a>
+              </li>
+              <li class="nav-carts__item">
+               <a href="#">Полтавы</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    <div class="carts">
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col-lg-8 col-12">
+            <div class="cart-big">
+              <div class="row no-gutters">
+                <div class="col-md-6 cart-big_img">
+                  <div class="discount">
+                    <span>-50%</span>
+                  </div>
+                  <img class="main" src="img/1.png" alt="">
+                </div>
+                <div class="col-md-6 description align-content-between">
+                  <div class="description-wrap">
+                    <div class="title">
+                      <span>SENTIDO GRACELAND KHAO LAK<br>RESORT & SPA 5* Као Лак</span>
+                    </div>
+                    <div class="country">
+                      <a href="#">Таиланд</a>
+                    </div>
+                    <div class="time">
+                      <img src="img/calendar.png" alt="">
+                      <span class="from">с 25.05.2018  -  </span>
+                      <span class="count">7 ночей</span>
+                    </div>
+                    <div class="road">
+                      <img src="img/plane.png" alt="">
+                      <span>вылет из Москвы</span>
+                    </div>
+                    <div class="food">
+                      <img src="img/food.png" alt="">
+                      <span>Завтрак</span>
+                    </div>
+                    <div class="btn-price">
+                      <a href="#">
+                        <span class="price">$ 592</span>
+                        <span class="count"> за 2х</span>
+                      </a>
+                      <strike class="cross-price">$ 392</strike>
+                    </div>
+                    <div class="hide-price">
+                      <span class="num">17 000 грн.</span>&nbsp;<span class="count">за 2х</span><strike class="cross-price">34 000 грн.</strike>
+                    </div>
+                  </div>
+                  <div class="best-price">
+                    <img src="img/update/fire.png" alt="">
+                    <span>ЛУЧШАЯ ЦЕНА</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="cart">
+              <div class="main-img">
+                <div class="discount">
+                  <span>-50%</span>
+                </div>
+                <img src="img/2.png" alt="">
+                <div class="country">
+                  <span>ЕГИПЕТ</span>
+                </div>
+                <div class="price">
+                  <span class="num">$ 8937</span></span>&nbsp;<span class="count">за 2х</span><strike class="cross-price">$ 392</strike>
+                </div>
+                <div class="hide-price">
+                  <span class="num">17 000 грн.</span>&nbsp;<span class="count">за 2х</span><strike class="cross-price">34 000 грн.</strike>
+                </div>
+              </div>
+              <div class="description">
+                <div class="title">
+                  <span>ZAHABIA HOTEL 3* ХУРГАДА</span>
+                </div>
+                <div class="time">
+                  <img src="img/calendar.png" alt="">
+                  <span class="from">с 20.05.2018  -  </span>
+                  <span class="count">6 ночей</span>
+                </div>
+                <div class="road">
+                  <img src="img/plane.png" alt="">
+                  <span>вылет из Москвы</span>
+                </div>
+                <div class="food">
+                  <img src="img/food.png" alt="">
+                  <span>Завтрак</span>
+                </div>
+              </div>
+              <div class="best-price">
+                <img src="img/update/fire.png" alt="">
+                <span>ЛУЧШАЯ ЦЕНА</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="cart">
+              <div class="main-img">
+                <img src="img/2.png" alt="">
+                <div class="country">
+                  <span>ЕГИПЕТ</span>
+                </div>
+                <div class="price">
+                  <span class="num">$ 8937</span></span>&nbsp;<span class="count">за 2х</span><strike class="cross-price">$ 392</strike>
+                </div>
+                <div class="hide-price">
+                  <span class="num">17 000 грн.</span>&nbsp;<span class="count">за 2х</span><strike class="cross-price">34 000 грн.</strike>
+                </div>
+              </div>
+              <div class="description">
+                <div class="title">
+                  <span>ZAHABIA HOTEL 3* ХУРГАДА</span>
+                </div>
+                <div class="time">
+                  <img src="img/calendar.png" alt="">
+                  <span class="from">с 20.05.2018  -  </span>
+                  <span class="count">6 ночей</span>
+                </div>
+                <div class="road">
+                  <img src="img/plane.png" alt="">
+                  <span>вылет из Москвы</span>
+                </div>
+                <div class="food">
+                  <img src="img/food.png" alt="">
+                  <span>Завтрак</span>
+                </div>
+              </div>
+              <div class="best-price">
+                <img src="img/update/plane-white.png" alt="">
+                <span>ПОСЛЕДНИЕ МЕСТА</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="cart">
+              <div class="main-img">
+                <img src="img/2.png" alt="">
+                <div class="country">
+                  <span>ЕГИПЕТ</span>
+                </div>
+                <div class="price">
+                  <span class="num">$ 8937</span></span>&nbsp;<span class="count">за 2х</span><strike class="cross-price">$ 392</strike>
+                </div>
+                <div class="hide-price">
+                  <span class="num">17 000 грн.</span>&nbsp;<span class="count">за 2х</span><strike class="cross-price">34 000 грн.</strike>
+                </div>
+              </div>
+              <div class="description">
+                <div class="title">
+                  <span>ZAHABIA HOTEL 3* ХУРГАДА</span>
+                </div>
+                <div class="time">
+                  <img src="img/calendar.png" alt="">
+                  <span class="from">с 20.05.2018  -  </span>
+                  <span class="count">6 ночей</span>
+                </div>
+                <div class="road">
+                  <img src="img/plane.png" alt="">
+                  <span>вылет из Москвы</span>
+                </div>
+                <div class="food">
+                  <img src="img/food.png" alt="">
+                  <span>Завтрак</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="cart">
+              <div class="main-img">
+                <img src="img/2.png" alt="">
+                <div class="country">
+                  <span>ЕГИПЕТ</span>
+                </div>
+                <div class="price">
+                  <span class="num">$ 8937</span></span>&nbsp;<span class="count">за 2х</span><strike class="cross-price">$ 392</strike>
+                </div>
+                <div class="hide-price">
+                  <span class="num">17 000 грн.</span>&nbsp;<span class="count">за 2х</span><strike class="cross-price">34 000 грн.</strike>
+                </div>
+              </div>
+              <div class="description">
+                <div class="title">
+                  <span>ZAHABIA HOTEL 3* ХУРГАДА</span>
+                </div>
+                <div class="time">
+                  <img src="img/calendar.png" alt="">
+                  <span class="from">с 20.05.2018  -  </span>
+                  <span class="count">6 ночей</span>
+                </div>
+                <div class="road">
+                  <img src="img/plane.png" alt="">
+                  <span>вылет из Москвы</span>
+                </div>
+                <div class="food">
+                  <img src="img/food.png" alt="">
+                  <span>Завтрак</span>
+                </div>
+              </div>
+              <div class="best-price">
+                <img src="img/update/fire.png" alt="">
+                <span>ЛУЧШАЯ ЦЕНА</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <hr class="left">
+          <a href="#" class="btn">
+            <span href="#">Показать еще</span>
+            <img src="img/wave.png" alt="">
+          </a>
+          <hr class="right">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="how">
+    <div class="container title">
+      <div class="row no-gutters justify-content-center">
+        <div class="title">
+          <span class="blue">Как мы</span>
+          <span class="orange">работаем</span>
+        </div>
+        <div class="w-100"></div>
+        <hr>
+        <div class="w-100"></div>
+        <span class="best">В отпуск за 4 шага!</span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row no-gutters how-blocks">
+        <div class="col-lg-3 col-sm-6">
+          <div class="how-block text-center">
+            <div class="block-num">
+              <span>01</span>
+            </div>
+            <div class="block-title">
+              <span>Забронируйте онлайн</span>
+            </div>
+            <div class="block-text">
+              <span>Оставьте заявку и наш<br> менедежр свяжется с Вами. <br>Мы ответим на все<br> интересующие Вас вопросы<br> и поможем выбрать <br>оптимальный тур</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="how-block text-center">
+            <div class="block-num">
+              <span>02</span>
+            </div>
+            <div class="block-title">
+              <span>Оплатите онлайн</span>
+            </div>
+            <div class="block-text">
+              <span>Быстро и надежно,<br>без комиссии и переплат. <br>Оплатить можно банковской <br>картой на расчетный <br>счет в банке или <br>онлайн кошельком</span>
+            </div>
+            <img src="img/arrow.png" class="arrow top" alt="">
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="how-block text-center">
+            <div class="block-num">
+              <span>03</span>
+            </div>
+            <div class="block-title">
+              <span>Получите документы</span>
+            </div>
+            <div class="block-text">
+              <span>После покупки тура мы <br>пришлем Вам все <br>необходимые документы <br>на электронную почту<br>или отправим пакет <br>документов “Новой почтой”</span>
+            </div>
+            <img src="img/arrow.png" class="arrow bottom" alt="">
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="how-block text-center">
+            <div class="block-num">
+              <span>04</span>
+            </div>
+            <div class="block-title">
+              <span>ВЫ ЛЕТИТЕ ОТДЫХАТЬ</span>
+            </div>
+            <div class="block-text">
+              <span>Мы всегда с Вами на связи<br>Оказываем поддержку<br>нашим туристам 7 дней<br>в неделю, 24 часа в сутки <br>Поможем решить любой<br>возникший вопрос</span>
+            </div>
+            <img src="img/arrow.png" class="arrow top" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <section class="minimum">
+    <div class="container title">
+      <div class="row no-gutters justify-content-center">
+        <div class="title">
+          <span class="blue">Минимальные</span>
+          <span class="orange">цены</span>
+        </div>
+        <div class="w-100"></div>
+        <hr>
+        <div class="w-100"></div>
+        <span class="best">Цены на популярные направления</span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-xl-3 col-lg-4 form-block text-center">
+          <div class="form-title">
+            <span>Узнайте первым<br>о самых выгодных<br>предложениях</span>
+          </div>
+          <div class="form-subtitle">
+            <span>Отдыхайте с комфортом</span>
+          </div>
+          <form action="#">
+            <div class="subscription">
+              <a href="#" class="subscription-viber">
+                <img src="img/update/viber-0.png" alt="">
+              </a>
+              <a href="#" class="subscription-telegram">
+                <img src="img/update/telegram-0.png" alt="">
+              </a>
+            </div>
+            <input type="submit" value="подписаться">
+          </form>
+        </div>
+        <div class="col-xl-9 col-lg-8">
+          <div class="row slider no-gutters">
+            <div class="col-lg-6">
+              <div class="item">
+                <div class="row no-gutters">
+                  <div class="main-img">
+                    <img src="img/min1.png" alt="">
+                  </div>
+                  <div class="text col">
+                    <div class="country">
+                      <span>Болгария</span>
+                    </div>
+                    <div class="row no-gutters col-12 justify-content-between align-items-center">
+                      <div class="item-price">
+                        <span class="price">от</span>&nbsp;<span class="num">153</span>&nbsp;<span class="price">$</span>
+                      </div>
+                      <a href="#"><img src="img/arrowleft.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row no-gutters">
+                  <div class="main-img">
+                    <img src="img/min2.png" alt="">
+                  </div>
+                  <div class="text col">
+                    <div class="country">
+                      <span>турция</span>
+                    </div>
+                    <div class="row no-gutters col-12 justify-content-between align-items-center">
+                      <div class="item-price">
+                        <span class="price">от</span>&nbsp;<span class="num">199</span>&nbsp;<span class="price">$</span>
+                      </div>
+                      <a href="#"><img src="img/arrowleft.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row no-gutters">
+                  <div class="main-img">
+                    <img src="img/min3.png" alt="">
+                  </div>
+                  <div class="text col">
+                    <div class="country">
+                      <span>Египет</span>
+                    </div>
+                    <div class="row no-gutters col-12 justify-content-between align-items-center">
+                      <div class="item-price">
+                        <span class="price">от</span>&nbsp;<span class="num">233</span>&nbsp;<span class="price">$</span>
+                      </div>
+                      <a href="#"><img src="img/arrowleft.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="item">
+                <div class="row no-gutters">
+                  <div class="main-img">
+                    <img src="img/min4.png" alt="">
+                  </div>
+                  <div class="text col">
+                    <div class="country">
+                      <span>ОАЭ</span>
+                    </div>
+                    <div class="row no-gutters col-12 justify-content-between align-items-center">
+                      <div class="item-price">
+                        <span class="price">от</span>&nbsp;<span class="num">448</span>&nbsp;<span class="price">$</span>
+                      </div>
+                      <a href="#"><img src="img/arrowleft.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row no-gutters">
+                  <div class="main-img">
+                    <img src="img/min5.png" alt="">
+                  </div>
+                  <div class="text col">
+                    <div class="country">
+                      <span>ТУНИС</span>
+                    </div>
+                    <div class="row no-gutters col-12 justify-content-between align-items-center">
+                      <div class="item-price">
+                        <span class="price">от</span>&nbsp;<span class="num">464</span>&nbsp;<span class="price">$</span>
+                      </div>
+                      <a href="#"><img src="img/arrowleft.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row no-gutters">
+                  <div class="main-img">
+                    <img src="img/min6.png" alt="">
+                  </div>
+                  <div class="text col">
+                    <div class="country">
+                      <span>Греция</span>
+                    </div>
+                    <div class="row no-gutters col-12 justify-content-between align-items-center">
+                      <div class="item-price">
+                        <span class="price">от</span>&nbsp;<span class="num">456</span>&nbsp;<span class="price">$</span>
+                      </div>
+                      <a href="#"><img src="img/arrowleft.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="item">
+                <div class="row no-gutters">
+                  <div class="main-img">
+                    <img src="img/min1.png" alt="">
+                  </div>
+                  <div class="text col">
+                    <div class="country">
+                      <span>Болгария</span>
+                    </div>
+                    <div class="row no-gutters col-12 justify-content-between align-items-center">
+                      <div class="item-price">
+                        <span class="price">от</span>&nbsp;<span class="num">153</span>&nbsp;<span class="price">$</span>
+                      </div>
+                      <a href="#"><img src="img/arrowleft.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row no-gutters">
+                  <div class="main-img">
+                    <img src="img/min2.png" alt="">
+                  </div>
+                  <div class="text col">
+                    <div class="country">
+                      <span>турция</span>
+                    </div>
+                    <div class="row no-gutters col-12 justify-content-between align-items-center">
+                      <div class="item-price">
+                        <span class="price">от</span>&nbsp;<span class="num">199</span>&nbsp;<span class="price">$</span>
+                      </div>
+                      <a href="#"><img src="img/arrowleft.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row no-gutters">
+                  <div class="main-img">
+                    <img src="img/min3.png" alt="">
+                  </div>
+                  <div class="text col">
+                    <div class="country">
+                      <span>Египет</span>
+                    </div>
+                    <div class="row no-gutters col-12 justify-content-between align-items-center">
+                      <div class="item-price">
+                        <span class="price">от</span>&nbsp;<span class="num">233</span>&nbsp;<span class="price">$</span>
+                      </div>
+                      <a href="#"><img src="img/arrowleft.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="item">
+                <div class="row no-gutters">
+                  <div class="main-img">
+                    <img src="img/min4.png" alt="">
+                  </div>
+                  <div class="text col">
+                    <div class="country">
+                      <span>ОАЭ</span>
+                    </div>
+                    <div class="row no-gutters col-12 justify-content-between align-items-center">
+                      <div class="item-price">
+                        <span class="price">от</span>&nbsp;<span class="num">448</span>&nbsp;<span class="price">$</span>
+                      </div>
+                      <a href="#"><img src="img/arrowleft.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row no-gutters">
+                  <div class="main-img">
+                    <img src="img/min5.png" alt="">
+                  </div>
+                  <div class="text col">
+                    <div class="country">
+                      <span>ТУНИС</span>
+                    </div>
+                    <div class="row no-gutters col-12 justify-content-between align-items-center">
+                      <div class="item-price">
+                        <span class="price">от</span>&nbsp;<span class="num">464</span>&nbsp;<span class="price">$</span>
+                      </div>
+                      <a href="#"><img src="img/arrowleft.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row no-gutters">
+                  <div class="main-img">
+                    <img src="img/min6.png" alt="">
+                  </div>
+                  <div class="text col">
+                    <div class="country">
+                      <span>Греция</span>
+                    </div>
+                    <div class="row no-gutters col-12 justify-content-between align-items-center">
+                      <div class="item-price">
+                        <span class="price">от</span>&nbsp;<span class="num">456</span>&nbsp;<span class="price">$</span>
+                      </div>
+                      <a href="#"><img src="img/arrowleft.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="controls">
+            <div class="row no-gutters">
+              <div class="col-6">
+                <div class="control-left">
+                  <hr>
+                  <span class="fa fa-chevron-left"></span>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="control-right">
+                  <span class="fa fa-chevron-right"></span>
+                  <hr>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="advantages">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-lg-4 col-md-6">
+          <div class="info-block text-center">
+            <div class="info-img">
+              <img src="img/update/adva-1.png" alt="">
+            </div>
+            <div class="info-title">
+              <span>сделаем цену ниже <br>чем у других</span>
+            </div>
+            <div class="info-text">
+              <span>Гарарантируем, что забронируем вам <br>любой тур по лучшей цене</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="info-block text-center">
+            <div class="info-img">
+              <img src="img/update/adva-2.png" alt="">
+            </div>
+            <div class="info-title">
+              <span>Абсолютная <br>Безопасность <a href="#">подробнее</a></span>
+            </div>
+            <div class="info-text">
+              <span>Моментальное бронирование тура не <br>выходя из дома</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="info-block text-center">
+            <div class="info-img">
+              <img src="img/update/adva-3.png" alt="">
+            </div>
+            <div class="info-title">
+              <span>Персональный <br>менеджер</span>
+            </div>
+            <div class="info-text">
+              <span>Mel te numquam copiosae. Cum dicit <br>debitis recteque in.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="reviews">
+    <div class="container title">
+      <div class="row no-gutters justify-content-center">
+        <div class="title">
+          <span class="blue">Наши счастливые </span>
+          <span class="orange">туристы</span>
+        </div>
+        <div class="w-100"></div>
+        <hr>
+        <div class="w-100"></div>
+        <span class="best">Отзывы от наших туристов в Instagram</span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row no-gutters inst-reviews">
+        <div class="inst-reviews__item col-md-6 col-xl-4">
+          <div class="header">
+            <div class="user-img" style="background-image:url(img/update/reviews/circle-img1.png)"></div>
+            <div class="user-info">
+              <p class="user-name">travelann</p>
+              <p class="user-city">Phuket...</p>
+            </div>
+            <a href="#" class="user-btn">в профиль</a>
+          </div>
+          <div style="background-image:url(img/update/reviews/big-img1.png);" class="main-img"></div>
+          <div class="footer">
+            <div class="icons-row">
+              <img class="icon-like" src="img/update/reviews/like.png" alt="">
+              <img class="icon-comment" src="img/update/reviews/comment.png" alt="">
+              <img class="icon-saved"  src="img/update/reviews/saved.png" alt="">
+            </div>
+            <div class="likes">
+              <p>200 отметок “Нравится”</p>
+            </div>
+            <div class="comment">
+              <p><span>travelann </span>Per an rebum harum regione, tempor qualisque ei ius, ne nobis corpora definitiones sea....</p>
+            </div>
+          </div>
+        </div>
+        <div class="inst-reviews__item col-md-6 col-xl-4">
+          <div class="header">
+            <div class="user-img" style="background-image:url(img/update/reviews/circle-img2.png)"></div>
+            <div class="user-info">
+              <p class="user-name">travelann</p>
+              <p class="user-city">Phuket...</p>
+            </div>
+            <a href="#" class="user-btn">в профиль</a>
+          </div>
+          <div style="background-image:url(img/update/reviews/big-img2.png);" class="main-img"></div>
+          <div class="footer">
+            <div class="icons-row">
+              <img class="icon-like" src="img/update/reviews/like.png" alt="">
+              <img class="icon-comment" src="img/update/reviews/comment.png" alt="">
+              <img class="icon-saved"  src="img/update/reviews/saved.png" alt="">
+            </div>
+            <div class="likes">
+              <p>200 отметок “Нравится”</p>
+            </div>
+            <div class="comment">
+              <p><span>travelann </span>Per an rebum harum regione, tempor qualisque ei ius, ne nobis corpora definitiones sea....</p>
+            </div>
+          </div>
+        </div>
+        <div class="inst-reviews__item col-md-6 col-xl-4">
+          <div class="header">
+            <div class="user-img" style="background-image:url(img/update/reviews/circle-img3.png)"></div>
+            <div class="user-info">
+              <p class="user-name">travelann</p>
+              <p class="user-city">Phuket...</p>
+            </div>
+            <a href="#" class="user-btn">в профиль</a>
+          </div>
+          <div style="background-image:url(img/update/reviews/big-img3.png);" class="main-img"></div>
+          <div class="footer">
+            <div class="icons-row">
+              <img class="icon-like" src="img/update/reviews/like.png" alt="">
+              <img class="icon-comment" src="img/update/reviews/comment.png" alt="">
+              <img class="icon-saved"  src="img/update/reviews/saved.png" alt="">
+            </div>
+            <div class="likes">
+              <p>200 отметок “Нравится”</p>
+            </div>
+            <div class="comment">
+              <p><span>travelann </span>Per an rebum harum regione, tempor qualisque ei ius, ne nobis corpora definitiones sea....</p>
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <hr class="left">
+          <a href="#" class="btn">
+            <span href="#">Показать еще</span>
+            <img src="img/update/reviews/btn-reviews.png" alt="">
+          </a>
+          <hr class="right">
+        </div>
+      </div>
+      <div class="row no-gutters just-reviews">
+        <div class="just-reviews__item-wrap">
+          <div class="just-reviews__item">
+            <div class="user-rating">
+              <span>6.8</span>
+            </div>
+            <p class="user-name">Андрей Леонтьев</p>
+            <div class="stars">
+              <img src="img/update/reviews/star1.png" alt="">
+              <img src="img/update/reviews/star1.png" alt="">
+              <img src="img/update/reviews/star1.png" alt="">
+              <img src="img/update/reviews/star1.png" alt="">
+              <img src="img/update/reviews/star0-4.png" alt="">
+            </div>
+            <p class="user-text">
+              Lorem ipsum dolor sit amet, eam omnesque adipiscing eu, dicta aperiam dissentias est te, elit accusata mea ne. Purto sale causae an his, est no enim hinc.
+            </p>
+          </div>
+          <div class="just-reviews__item">
+            <div class="user-rating">
+              <span>6.8</span>
+            </div>
+            <p class="user-name">Андрей Леонтьев</p>
+            <div class="stars">
+              <img src="img/update/reviews/star1.png" alt="">
+              <img src="img/update/reviews/star1.png" alt="">
+              <img src="img/update/reviews/star1.png" alt="">
+              <img src="img/update/reviews/star1.png" alt="">
+              <img src="img/update/reviews/star0-4.png" alt="">
+            </div>
+            <p class="user-text">
+              Lorem ipsum dolor sit amet, eam omnesque adipiscing eu, dicta aperiam dissentias est te, elit accusata mea ne. Purto sale causae an his, est no enim hinc.
+            </p>
+          </div>
+        </div>
+        <div class="just-reviews__item just-reviews__item-big">
+          <div class="user-rating">
+            <span>6.8</span>
+          </div>
+          <p class="user-name">Борис Носков</p>
+          <div class="stars">
+            <img src="img/update/reviews/star1.png" alt="">
+            <img src="img/update/reviews/star1.png" alt="">
+            <img src="img/update/reviews/star1.png" alt="">
+            <img src="img/update/reviews/star1.png" alt="">
+            <img src="img/update/reviews/star0-4.png" alt="">
+          </div>
+          <p class="user-text">
+            Et sint magna pri, eu vim ludus signiferumque, ne eleifend sit. Vidit interesset no duo, no mea gloriatur constituto. <br><br>
+            At vix tale convenire, sale vivendum tincidunt cum ex. Cum dicit debitis recteque in, no inani labore erroribus cum, ea eius ferri his. Ut nonumy mucius pri. <br><br>
+            Id fuisset consetetur nec, omnis gloriatur quo ei, iudicabit deseruisse. Mea et aliquam reformidans, no dicat partem sententiae mel.
+            ad, eu quot decore discere eos. Vel possit vivendum ne, duo senserit laboramus voluptatibus an.
+          </p>
+        </div>
+        <div class="just-reviews__item-wrap just-reviews__item-mobile">
+          <div class="just-reviews__item">
+            <div class="user-rating">
+              <span>6.8</span>
+            </div>
+            <p class="user-name">Андрей Леонтьев</p>
+            <div class="stars">
+              <img src="img/update/reviews/star1.png" alt="">
+              <img src="img/update/reviews/star1.png" alt="">
+              <img src="img/update/reviews/star1.png" alt="">
+              <img src="img/update/reviews/star1.png" alt="">
+              <img src="img/update/reviews/star0-4.png" alt="">
+            </div>
+            <p class="user-text">
+              Lorem ipsum dolor sit amet, eam omnesque adipiscing eu, dicta aperiam dissentias est te, elit accusata mea ne. Purto sale causae an his, est no enim hinc.
+            </p>
+          </div>
+          <div class="just-reviews__item">
+            <div class="user-rating">
+              <span>6.8</span>
+            </div>
+            <p class="user-name">Андрей Леонтьев</p>
+            <div class="stars">
+              <img src="img/update/reviews/star1.png" alt="">
+              <img src="img/update/reviews/star1.png" alt="">
+              <img src="img/update/reviews/star1.png" alt="">
+              <img src="img/update/reviews/star1.png" alt="">
+              <img src="img/update/reviews/star0-4.png" alt="">
+            </div>
+            <p class="user-text">
+              Lorem ipsum dolor sit amet, eam omnesque adipiscing eu, dicta aperiam dissentias est te, elit accusata mea ne. Purto sale causae an his, est no enim hinc.
+            </p>
+          </div>
+        </div>
+        <div class="button">
+          <hr class="left">
+          <a href="#" class="btn">
+            <span href="#">Показать еще</span>
+            <img src="img/update/reviews/btn-reviews.png" alt="">
+          </a>
+          <hr class="right">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="telegram">
+    <div class="container">
+      <hr>
+      <div class="title">
+        <span>ХОТИТЕ ПОЛУЧАТЬ<br>УНИКАЛЬНЫЕ<br>ПРЕДЛОЖЕНИЯ?</span>
+      </div>
+      <div class="subtitle">
+        <span>Подпишитесь на наш канал в <br>TELEGRAM</span>
+      </div>
+	  <div class="links">
+		<a href="https://t.me/warmtours">t.me/telegramh</a>
+	  </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-lg-3 col-sm-6">
+          <div class="logo">
+            <img src="img/update/logo2.png" alt="">
+          </div>
+          <div class="copy">
+            <span>© 2018 Агенство индивидуального<br> Туризма, Агенство</span>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-3 col-12">
+          <div class="title">
+            <span>Услуги</span>
+          </div>
+          <ul>
+            <li><a href="#">Авиабилеты</a></li>
+            <li><a href="#">Страховка</a></li>
+            <li><a href="#">Визы</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-sm-3 col-12">
+          <div class="title">
+            <span>Информация</span>
+          </div>
+          <ul>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Преимущества</a></li>
+            <li><a href="#">Как купить?</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-5 col-md-7 col-sm-12">
+          <div class="title line">
+            <span>КОНТАКТЫ</span>
+            <hr>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-sm-6">
+              <div class="phone">
+                <div class="row no-gutters">
+                  <div class="phone-img">
+                    <img src="img/phone.png" alt="">
+                  </div>
+                  <div class="phone-num">
+                    <div class="num">
+                      <a href="tel:+380951797979"><span>+38 (095) 1-77-77-77</span></a>
+                    </div>
+                    <div class="num">
+                      <a href="tel:+380676648733"><span>+38 (067) 6-77-77-77</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="email">
+                <div class="row no-gutters">
+                  <div class="email-img">
+                    <img src="img/email.png" alt="">
+                  </div>
+                  <div class="email-text">
+                    <span>info@info.com.ua</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="loc">
+                <div class="row no-gutters">
+                  <div class="loc-img">
+                    <img src="img/loc.png" alt="">
+                  </div>
+                  <div class="loc-text">
+                    <span>г. Город,<br>улица улица улица</span>
+                    <div class="soc">
+                      <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-vk"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="overlay"></div>
+  <section class="result-overlay">
+    <div class="container">
+      <div class="result">
+        <div class="top-control">
+          <div class="back">
+            <a href="#" class="fa fa-angle-left"></a>
+            <span>ИЗМЕНИТЬ ПАРАМЕТРЫ ПОИСКА</span>
+          </div>
+          <div class="close">
+            <span>&times;</span>
+          </div>
+        </div>
+        <div class="content">
+          <div class="result-count">
+            <span>Найдено <b>270</b> туров</span>
+          </div>
+          <div class="result-list">
+            <div class="result-item">
+              <div class="row no-gutters">
+                <div class="col-lg-auto image">
+                  <div class="image-wrap">
+                    <div class="discount">
+                      <span>-50%</span>
+                    </div>
+                    <img src="img/r1.png" alt="">
+                    <div class="best-price">
+                      <img src="img/update/fire.png" alt="">
+                      <span>ЛУЧШАЯ ЦЕНА</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="descr col-sm-12 col-md">
+                  <div class="row no-gutters">
+                    <div class="name">
+                      <div class="row no-gutters align-items-baseline">
+                        <span class="title">SENTIDO GRACELAND KHAO LAK RESORT & SPA <span class="highlight">5*</span></span>
+                        <span class="country">Таиланд, Пхукет</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-gutters">
+                    <div class="col-auto">
+                      <div class="info">
+                        <div class="row no-gutters">
+                          <div class="block">
+                            <img src="img/calendarg.png" alt="">
+                            <span>с 25.06.2018  -  <b>7 ночей</b></span>
+                          </div>
+                          <div class="block">
+                            <img src="img/plane.png" alt="">
+                            <span>Авиа <b>из Киева</b></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="room">
+                        <div class="row no-gutters align-items-start">
+                          <img src="img/roomg.png" alt="">
+                          <div class="text">
+                            <div>Тип комнаты: <b>Standard Room</b></div>
+                            <div>Размещение: <b>2 взрослых</b></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="food">
+                        <div class="row no-gutters align-items-start">
+                          <img src="img/foodg.png" alt="">
+                          <span>Питание: <b>Завтрак и ужин</b></span>
+                        </div>
+                      </div>
+                      <div class="show-more">
+                        <div class="row no-gutters align-items-end">
+                          <img src="img/mapb.png" alt="">
+                          <a href="#"><span>Показать еще <b>20</b> туров в этот отель</span><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <div class="stars-modal">
+                        <div class="row no-gutters">
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                        </div>
+                      </div>  
+                      <div class="hotel-rate">
+                        <span class="text">Рейтинг отеля:</span><span class="rate"><b>8</b> из <i>10</i></span>
+                      </div>
+                      <div class="cross-price__wrap">
+                        <strike class="cross-price">$ 3 600</strike>
+                      </div>
+                      <div class="price">
+                        <div class="img">
+                          <img src="img/update/dollar.png" alt="">
+                        </div>
+                        <div class="hide-price">
+                          <span class="num">17 000 грн.</span>&nbsp;<span class="count">за 2х</span><strike class="cross-price">34 000 грн.</strike>
+                        </div>
+                        <p><span class="num">$ 1 800 </span>&nbsp;<span class="count"> за 2х</span></p>
+                      </div>
+                      <div class="more-info">
+                        <div class="row no-gutters align-items-end">
+                          <a href="#">Подробнее о туре</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="result-item">
+              <div class="row no-gutters">
+                <div class="col-lg-auto image">
+                  <div class="image-wrap">
+                    <div class="discount">
+                      <span>-50%</span>
+                    </div>
+                    <img src="img/r2.png" alt="">
+                    <div class="best-price">
+                      <img src="img/update/plane-white.png" alt="">
+                      <span>ПОСЛЕДНИЕ МЕСТА</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="descr col-sm-12 col-md">
+                  <div class="row no-gutters">
+                    <div class="name">
+                      <div class="row no-gutters align-items-baseline">
+                        <span class="title">Centra by Centara Maris Resort Jomtien <span class="highlight">4*</span></span>
+                        <span class="country">Таиланд, Пхукет</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-gutters">
+                    <div class="col-auto">
+                      <div class="info">
+                        <div class="row no-gutters">
+                          <div class="block">
+                            <img src="img/calendarg.png" alt="">
+                            <span>с 25.06.2018  -  <b>7 ночей</b></span>
+                          </div>
+                          <div class="block">
+                            <img src="img/plane.png" alt="">
+                            <span>Авиа <b>из Киева</b></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="room">
+                        <div class="row no-gutters align-items-start">
+                          <img src="img/roomg.png" alt="">
+                          <div class="text">
+                            <div>Тип комнаты: <b>Standard Room</b></div>
+                            <div>Размещение: <b>2 взрослых</b></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="food">
+                        <div class="row no-gutters align-items-start">
+                          <img src="img/foodg.png" alt="">
+                          <span>Питание: <b>Завтрак и ужин</b></span>
+                        </div>
+                      </div>
+                      <div class="show-more">
+                        <div class="row no-gutters align-items-end">
+                          <img src="img/mapb.png" alt="">
+                          <a href="#"><span>Показать еще <b>20</b> туров в этот отель</span><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <div class="stars-modal">
+                        <div class="row no-gutters">
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                        </div>
+                      </div>  
+                      <div class="hotel-rate">
+                        <span class="text">Рейтинг отеля:</span><span class="rate"><b>7</b> из <i>10</i></span>
+                      </div>
+                      <div class="cross-price__wrap">
+                        <strike class="cross-price">$ 392</strike>
+                      </div>
+                      <div class="price">
+                        <div class="img">
+                          <img src="img/update/dollar.png" alt="">
+                        </div>
+                        <div class="hide-price">
+                          <span class="num">17 000 грн.</span>&nbsp;<span class="count">за 2х</span><strike class="cross-price">34 000 грн.</strike>
+                        </div>
+                        <p><span class="num">$ 1 800 </span>&nbsp;<span class="count"> за 2х</span></p>
+                      </div>
+                      <div class="more-info">
+                        <div class="row no-gutters align-items-end">
+                          <a href="#">Подробнее о туре</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="result-item">
+              <div class="row no-gutters">
+                <div class="col-lg-auto image">
+                  <div class="image-wrap">
+                    <div class="discount">
+                      <span>-50%</span>
+                    </div>
+                    <img src="img/r1.png" alt="">
+                  </div>
+                </div>
+                <div class="descr col-sm-12 col-md">
+                  <div class="row no-gutters">
+                    <div class="name">
+                      <div class="row no-gutters align-items-baseline">
+                        <span class="title">Citrus Parc Hotel Pattaya by Compass <span class="highlight">5*</span></span>
+                        <span class="country">Таиланд, Пхукет</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-gutters">
+                    <div class="col-auto">
+                      <div class="info">
+                        <div class="row no-gutters">
+                          <div class="block">
+                            <img src="img/calendarg.png" alt="">
+                            <span>с 25.06.2018  -  <b>7 ночей</b></span>
+                          </div>
+                          <div class="block">
+                            <img src="img/plane.png" alt="">
+                            <span>Авиа <b>из Киева</b></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="room">
+                        <div class="row no-gutters align-items-start">
+                          <img src="img/roomg.png" alt="">
+                          <div class="text">
+                            <div>Тип комнаты: <b>Standard Room</b></div>
+                            <div>Размещение: <b>2 взрослых</b></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="food">
+                        <div class="row no-gutters align-items-start">
+                          <img src="img/foodg.png" alt="">
+                          <span>Питание: <b>Завтрак и ужин</b></span>
+                        </div>
+                      </div>
+                      <div class="show-more">
+                        <div class="row no-gutters align-items-end">
+                          <img src="img/mapb.png" alt="">
+                          <a href="#"><span>Показать еще <b>20</b> туров в этот отель</span><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <div class="stars-modal">
+                        <div class="row no-gutters">
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                        </div>
+                      </div>  
+                      <div class="hotel-rate">
+                        <span class="text">Рейтинг отеля:</span><span class="rate"><b>5</b> из <i>10</i></span>
+                      </div>
+                      <div class="cross-price__wrap">
+                        <strike class="cross-price">$ 392</strike>
+                      </div>
+                      <div class="price">
+                        <div class="img">
+                          <img src="img/update/dollar.png" alt="">
+                        </div>
+                        <div class="hide-price">
+                          <span class="num">17 000 грн.</span>&nbsp;<span class="count">за 2х</span><strike class="cross-price">34 000 грн.</strike>
+                        </div>
+                        <p><span class="num">$ 1 800 </span>&nbsp;<span class="count"> за 2х</span></p>
+                      </div>
+                      <div class="more-info">
+                        <div class="row no-gutters align-items-end">
+                          <a href="#">Подробнее о туре</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/tabulous.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery.nice-select.min.js"></script>
+  <script src="js/slimscroll.min.js"></script>
+  <script src="js/scripts.min.js"></script>
+</body>
+<body>
+  <header class="big info">
+    <div class="container">
+      <div class="header-top">
+        <div class="row no-gutters col-12 header-top_wrap">
+          <div class="logo">
+            <img src="img/update/logo.png" alt="Logotip">
+          </div>
+          <nav class="menu">
+            <ul>
+              <li class="active"><a href="#">ГОРЯЩИЕ ТУРЫ</a><hr></li>
+              <li><a href="#">СТРАНЫ</a><hr></li>
+              <li><a href="#">ИНФОРМАЦИЯ</a><hr></li>
+              <li><a href="#">КОНТАКТЫ</a><hr></li>
+            </ul>
+            <hr>
+          </nav>
+          <nav class="menu-resp order-sm-1">
+            <a class="menu-btn">
+              <span></span>
+            </a><br>
+            <ul>
+              <li class="active"><a href="#">ГОРЯЩИЕ ТУРЫ</a></li>
+              <li><a href="#">СТРАНЫ</a></li>
+              <li><a href="#">ИНФОРМАЦИЯ</a></li>
+              <li><a href="#">КОНТАКТЫ</a></li>
+            </ul>
+          </nav>
+          <div class="contacts">
+            <a href="#">
+              <img src="img/update/phone.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="img/update/viber.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="img/update/telegram.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="main-info">
+        <div class="first">
+          <span class="orange">HIT</span>SvIT -  ваш<br>гид путешествий
+        </div>
+        <hr>
+        <div class="second">
+          <span>онлайн Бронирование 24/7</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="filter-overlay"></div>
+  <div class="info-wrap">
+    <div class="main-text-window">
+      <p>
+        Lorem ipsum dolor sit amet, albucius quaestio scribentur pri ea. Vim ne minim choro iudico. Eos affert diceret moderatius te. Cum alia magna posidonium no, congue tacimates ei est. Mea summo facilis ut. Ius at iisque vidisse, sea an rebum aliquid euripidis, movet pertinacia eum ex. Illum graece ad has. Vel at minimum omittam. Adipiscing definiebas vim no, mei omnes laudem in.
+        <br><br>
+        Te eum elit dolor legendos, utroque vocibus in eam. Ancillae petentium vis id, mei imperdiet laboramus democritum ea, id alii noluisse duo. Tation discere diceret ut vim, ne minim impedit sed. Per dico convenire an, ut sed feugiat feugait. Eam ubique menandri at. Aperiam tractatos ut his, malis assum inermis nam at, volutpat elaboraret ne eam. Tempor facete pertinacia nec ut. An prima velit legendos eos, ad eam assum accusata neglegentur.
+      </p>
+    </div>
+    <div class="container">
+      <div class="sidebar-info">
+        <ul>
+          <li><a href="#about-info">Кто мы?</a></li>
+          <li><a href="#advantages-info">Наши преимущества</a></li>
+          <li><a href="#sertificate-info">Гарантии и дипломы</a></li>
+          <li><a href="#steps-info">Как купить</a></li>
+          <li><a href="#how-info">Как забронировать тур</a></li>
+          <li><a href="#travel-info">Как происходит путешествие</a></li>
+          <li><a href="#compensation-info">Компесации</a></li>
+          <li><a href="#memo-info">Памятка туристу</a></li>
+        </ul>
+      </div>
+      <section id="about-info">
+        <div class="min-container">
+          <div class="text-wrap">
+            <div class="title">
+              <span class="blue">Кто </span>
+              <span class="orange">мы?</span>
+            </div>
+            <p>Лучшие специалисты в туризме</p>
+          </div>
+          <div class="controls">
+            <div class="control-left">
+              <span class="fa fa-chevron-left slick-arrow" style=""></span>
+            </div>
+            <div class="control-right">
+              <span class="fa fa-chevron-right slick-arrow" style=""></span>
+            </div>
+          </div>
+          <div class="slider-wrap">
+            <div class="slider-item">
+              <div class="img">
+                
+              </div>
+              <div class="text">
+                <p class="name">фамилия имя отчество</p>
+                <p class="position">Должность</p>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="img">
+                
+              </div>
+              <div class="text">
+                <p class="name">фамилия имя отчество</p>
+                <p class="position">Должность</p>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="img">
+                
+              </div>
+              <div class="text">
+                <p class="name">фамилия имя отчество</p>
+                <p class="position">Должность</p>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="img">
+                
+              </div>
+              <div class="text">
+                <p class="name">фамилия имя отчество</p>
+                <p class="position">Должность</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="advantages-info">
+        <div class="min-container">
+          <div class="row">
+            <div class="advantages-info__item col-lg-4 col-md-6">
+              <div class="info-block text-center">
+                <div class="info-img">
+                  <img src="img/i3.png" alt="">
+                </div>
+                <div class="info-title">
+                  <span>Огромный опыт работы <br>в туристической сфере</span>
+                </div>
+                <div class="info-text">
+                  <span>
+                    У нас за плечами более 15 лет работы в туристическом 
+                    бизнесе, поэтому с нами 
+                    можно решить любые задачи, найти любой отель мира и отправиться в любую страну.
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="advantages-info__item col-lg-4 col-md-6">
+              <div class="info-block text-center">
+                <div class="info-img">
+                  <img src="img/i2.png" alt="">
+                </div>
+                <div class="info-title">
+                  <span>Самые лучшие <br>цены</span>
+                </div>
+                <div class="info-text">
+                  <span>
+                    Мы предлагаем отдых во многих странах мира и всегда находим выгодное решение для своих клиентов, подходящее под их бюджет. Постоянным клиентам предоставляется скидка.
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="advantages-info__item col-lg-4 col-md-6">
+              <div class="info-block text-center">
+                <div class="info-img">
+                  <img src="img/i3.png" alt="">
+                </div>
+                <div class="info-title">
+                  <span>Круглосуточная тех. <br>поддержка</span>
+                </div>
+                <div class="info-text">
+                  <span>
+                    Если у вас возникнут какие-то проблемы во время отдыха. 
+                    Всегда обращайтесь в нашу круглосуточную тех. поддержку. Мы оперативно решим все
+                    ваши проблемы.
+                  </span>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      <section id="sertificate-info">
+        <div class="min-container">
+          <div class="text-wrap">
+            <div class="title">
+              <span class="blue">Наши гарантии</span>
+              <span class="orange"> и дипломы</span>
+            </div>
+            <p>Вы можете даверять нам!</p>
+            <div class="controls">
+              <div class="control-left">
+                <span class="fa fa-chevron-left slick-arrow" style=""></span>
+              </div>
+              <div class="control-right">
+                <span class="fa fa-chevron-right slick-arrow" style=""></span>
+              </div>
+            </div>
+          </div>
+          <div class="slider-wrap">
+            <div class="slider-block">
+              <div class="slider-item">
+                <div class="img-wrap">
+                  <img src="img/info/sert/4.png" alt="">
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="img-wrap">
+                  <img src="img/info/sert/4.png" alt="">
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="img-wrap">
+                  <img src="img/info/sert/4.png" alt="">
+                </div>
+              </div>
+              <hr>
+              <div class="slider-item">
+                <div class="img-wrap">
+                  <img src="img/info/sert/4.png" alt="">
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="img-wrap">
+                  <img src="img/info/sert/4.png" alt="">
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="img-wrap">
+                  <img src="img/info/sert/4.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="slider-block">
+              <div class="slider-item">
+                <div class="img-wrap">
+                  <img src="img/info/sert/1.png" alt="">
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="img-wrap">
+                  <img src="img/info/sert/1.png" alt="">
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="img-wrap">
+                  <img src="img/info/sert/3.png" alt="">
+                </div>
+              </div>
+              <hr>
+              <div class="slider-item">
+                <div class="img-wrap">
+                  <img src="img/info/sert/4.png" alt="">
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="img-wrap">
+                  <img src="img/info/sert/5.png" alt="">
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="img-wrap">
+                  <img src="img/info/sert/6.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="steps-info">
+        <div class="min-container">
+          <div class="text-wrap">
+            <div class="title">
+              <span class="blue">Как </span>
+              <span class="orange">купить тур?</span>
+            </div>
+            <p>Всего 5 шагов к идеальному отпуску!</p>
+          </div>
+          <div class="steps-wrap">
+            <div class="big-step step-item">
+              <div class="number">
+                <span>01</span>
+              </div>
+              <div class="text">
+                <p class="title">Предоплата</p>
+                <p class="desc">
+                  Для бронирования тура нужно внести предоплату 15% от стоимости тура, но не менее
+                  3000 грн. Предоплата производится банковской картой на защищенной странице
+                  эквайринга. Средства блокируются и списываются только после подтверждения тура.
+                </p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="number">
+                <span>02</span>
+              </div>
+              <div class="text">
+                <p class="title">паспортные данные</p>
+                <p class="desc">
+                  Для бронирования тура необходимо ввести данные загранпаспортов
+                  всех туристов. В электронной форме.
+                </p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="number">
+                <span>03</span>
+              </div>
+              <div class="text">
+                <p class="title">Подтверждение бронирования</p>
+                <p class="desc">
+                  Получите подтверждение, что тур забронирован и зарезервированы
+                  все услуги по программе тура.
+                </p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="number">
+                <span>04</span>
+              </div>
+              <div class="text">
+                <p class="title">Оплата остатка суммы</p>
+                <p class="desc">
+                  Оплачиваете оставшуюся сумму в течение 2х дней. Оплатить можно картой в банке или через интернет-банк.
+                </p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="number">
+                <span>05</span>
+              </div>
+              <div class="text">
+                <p class="title">получение документов</p>
+                <p class="desc">
+                  Получаете на электронную почту
+                  все документы на тур.
+                  Распечатываете на принтере и готовитесь к отдыху.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="how-info">
+        <div class="min-container">
+          <div class="text-wrap">
+            <div class="title">
+              <span class="blue">Как </span>
+              <span class="orange">забронировать тур?</span>
+            </div>
+            <p>Всего за 5 шагов!</p>
+          </div>
+          <div class="row no-gutters how-blocks">
+            <div class="col-lg-4 col-sm-6">
+              <div class="how-block text-center">
+                <div class="block-num">
+                  <span>01</span>
+                </div>
+                <div class="block-title">
+                  <span>Ваши контакты</span>
+                </div>
+                <div class="block-text">
+                  <span>
+                    Выберите предложение,
+                    внесите контактные данные: ФИО, адрес и номер телефона! Нажимите «Заказать тур».
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="how-block text-center">
+                <div class="block-num">
+                  <span>02</span>
+                </div>
+                <div class="block-title">
+                  <span>Предоплата</span>
+                </div>
+                <div class="block-text">
+                  <span>
+                    Вносите предоплату. На открывшейся странице, указываете номер банковской карты, срок ее действия и защитный код.
+                  </span>
+                </div>
+                <img src="img/arrow.png" class="arrow top" alt="">
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="how-block text-center">
+                <div class="block-num">
+                  <span>03</span>
+                </div>
+                <div class="block-title">
+                  <span>Паспортные данные</span>
+                </div>
+                <div class="block-text">
+                  <span>
+                    Вносите данные
+                    загранпаспортов всех
+                    туристов. Ожидаете
+                    подтверждения тура
+                    туроператором.
+                  </span>
+                </div>
+                <img src="img/arrow.png" class="arrow bottom" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="row no-gutters how-blocks second">
+            <div class="col-lg-6">
+              <div class="how-block text-center">
+                <div class="block-num">
+                  <span>04</span>
+                </div>
+                <div class="block-title">
+                  <span>Оплата остатка суммы</span>
+                </div>
+                <div class="block-text">
+                  <span>
+                    Если до начала тура более 31 <br>дня - оплату можно сделать <br>двумя частями. Первую половину <br>в течение 2банковских дней, а <br>остальные не позднее, чем за 14 <br>рабочих дней до начала тура.
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="how-block text-center">
+                <div class="block-num">
+                  <span>05</span>
+                </div>
+                <div class="block-title">
+                  <span>получение документов</span>
+                </div>
+                <div class="block-text">
+                  <span>
+                    После полной оплаты документы <br>на тур будут направлены на <br>электронную почту. Это <br>электронные документы - <br>просто распечатайте их и<br> вперед в путешествие!
+                  </span>
+                </div>
+                <img src="img/arrow.png" class="arrow top" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="travel-info">
+        <div class="min-container">
+          <div class="text-wrap">
+            <div class="title">
+              <span class="blue">Как </span>
+              <span class="orange">происходит путешествие?</span>
+            </div>
+            <p>Вкратце о главном</p>
+          </div>
+          <div class="catalog-docs">
+            <p>
+              Оплатив тур, вы получаете документы. И самое время готовиться к путешествию! Прежде всего - <br>обязательно ознакомьтесь с пакетом документов и сверьте паспортные данные в них:
+            </p>
+            <ul>
+              <li>Загранпаспорт (данные которого Вы указывали при бронировании)</li>
+              <li>Авиабилеты</li>
+              <li>Ваучер</li>
+              <li>Страховой полис</li>
+            </ul>
+          </div>
+          <div class="template">
+            <p class="title">
+              Проверив документы, начинаем собирать чемоданы!
+            </p>
+            <p class="desc">
+              Условно, ваш багаж делится на 2 части: зарегистрирован (20 кг на человека) и ручная кладь (5 кг на человека). Также нормы багажа можно узнать в вашем авиабилете. Если вы не смогли разобраться, какая у вас норма багажа - просто позвоните или напишите нам.
+            </p>
+          </div>
+          <div class="baggage">
+            <div class="template">
+              <p class="title">
+                Зарегистрированный багаж
+              </p>
+              <p class="desc">
+                Это багаж, который пассажир сдает на стойке регистрации для перевозки в багажном отделении самолета.
+              </p>
+            </div>
+            <div class="template">
+              <p class="title">
+                Ручная кладь
+              </p>
+              <p class="desc">
+                Багаж, который пассажир берет с собой в салон самолета и самостоятельно за него отвечает.
+              </p>
+            </div>
+          </div>
+          <div class="template registration">
+            <p class="title">
+              Регистрация на рейс
+            </p>
+            <p class="desc">
+              Регистрация на рейс начинается за <span>3 часа</span> и заканчивается за 40 мин. до вылета (моментом регистрации считается получение пассажиром посадочного талона). На стойке регистрации вашего рейса, необходимо предъявить загранпаспорт и электронные билеты. Если пассажир несвоевременно прибыл на регистрацию, авиакомпания вправе не пропустить его на борт самолета. Также информация о начале регистрации указана в вашем билете.
+            </p>
+          </div>
+          <div class="template pop">
+            <p class="title">
+              по прилету
+            </p>
+            <p class="desc">
+              После прилета в аэропорт страны назначения вам необходимо пройти к стойке «PASSPORT CONTROL» для проверки паспорта. После прохождения паспортного контроля не забудьте получить свой багаж на багажной ленте, у которой на электронном табло указан номер вашего рейса.
+            </p>
+            <p>
+              При выходе из аэропорта подойдите к представителю принимающей стороны (название и логотип указано в ваучере). Обычно представителей можно распознать по символике (таблички с логотипами туроператоров). Просто покажите представителю ваш ваучер, и они сопровождают вас в автобус, которым будет происходить трансфер в отель.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="compensation-info">
+        <div class="min-container">
+          <div class="text-wrap">
+            <div class="title">
+              <span class="blue">Какие </span>
+              <span class="orange">есть компесации?</span>
+            </div>
+            <p>Что делать если случился форс-мажор?</p>
+          </div>
+          <div class="compensation">
+            <p class="desc">
+              Для того, чтобы существенно уменьшить риски потери средств в случае наступления форс-мажорных обстоятельств, мы решили реализовать и предложить туристам 3 дополнительных услуги:
+            </p>
+            <ul>
+              <li>Компенсация за отказ от поездки</li>
+              <li>Компенсация в случае признания неплатежеспособности (банкротства) туроператора</li>
+              <li>Компенсація 20% від вартості туру за затримку літака більше, ніж на 3 години</li>
+            </ul>
+          </div>
+          <div class="template">
+            <p class="title">
+              Компенсация в случае признания неплатежеспособности туроператора
+            </p>
+            <p class="desc">
+              При невозможности выполнить обязательства туроператора перед туристом в связи с признанием его неплатежеспособности вы получаете компенсацию в размере 90% от полной стоимости тура. Стоимость данной услуги составляет 3% от стоимости забронированного тура.
+            </p>
+            <p>
+              Компенсация выплачивается на депозитный счет в сервисе Misto.travel в течение 60 дней с момента признания неплатежеспособности туроператора. Средства с депозитного счета вы сможете использовать на оплату любого тура, забронированного на нашем сайте как для себя, так и для других лиц.
+            </p>
+          </div>
+          <div class="compensation">
+            <div class="template">
+              <p class="title">
+                Компенсация за отказ от поездки
+              </p>
+              <p class="desc">
+                Заказ этой услуги позволяет получить денежную компенсацию при отказе клиента от забронированного тура с любой причине. Услуга вступает в действие только после полной оплаты тура. В случае необходимости отказа от тура нужно обращаться в службу поддержки Misto.travel. Стоимость услуги составляет 5% от стоимости тура.
+              </p>
+            </div>
+            <ul>
+              <li>Если отказ от тура более чем за 30 дней до начала тура - 90% от стоимости тура</li>
+              <li>5-29 дней до начала тура - 70% от стоимости тура</li>
+              <li>7-14 дней до начала тура - 60% от стоимости тура</li>
+              <li>3-6 дней до начала тура - 50% от стоимости тура</li>
+            </ul>
+          </div>
+          <div class="template zaderzhka">
+            <p class="title">
+              Компенсация за задержку самолета
+            </p>
+            <p class="desc">
+              При задержке самолета более чем на 3:00 вы получаете компенсацию в размере 20% от стоимости тура на Бонусный счет в сервисе Misto.travel. Стоимость услуги составляет 1% от стоимости тура.
+            </p>
+            <p>
+              Средства с бонусного счета вы сможете использовать для частичной оплаты любого тура, заказанного на нашем сайте как для себя, так и для других лиц. Для активации услуги необходимо отправить письмо на электронный адрес info@misto.travel (в течение 5 рабочих дней с момента получения информации об изменении времени вылета) с темой: «Компенсация за задержку рейса в заказе хххххх», где «хххххх» номер заказа тура. Средства зачтутся на бонусный счет в течение 3 рабочих дней.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="memo-info">
+        <div class="min-container">
+          <div class="text-wrap">
+            <div class="title">
+              <span class="blue">Памятка </span>
+              <span class="orange">туристу</span>
+            </div>
+            <p>Будьте готовы ко всему!</p>
+          </div>
+          <div class="memo">
+            <p>
+              Спасибо за выбор нашей компании и желаем хорошо провести Ваш отпуск! <br>
+              Просим Вас внимательно ознакомиться с этой достопримечательностью.
+            </p>
+            <p class="warning">
+              Внимание, авиакомпания имеет право изменять время вылета в пределах суток.
+              <p class="warning-desc">
+                Обязательно уточняйте расписание <span>за 24 часа</span> до вылета на сайте аэропорта, согласно номера Вашего рейса!
+              </p>
+            </p>
+          </div>
+          <ul class="aeroports-list">
+            <li class="title">
+              <p>Аэропорт</p>
+              <img src="img/info/chto-to.png" alt="">
+            </li>
+            <li>
+              <p>Киев​​ (Жуляни) </p>
+              <a href="">www.iev.aero</a>
+            </li>
+            <li>
+              <p>Борисполь </p>
+              <a href="">www.kbp.aero</a>
+            </li>
+            <li>
+              <p>Львов</p>
+              <a href="">www.lwo.aero</a>
+            </li>
+            <li>
+              <p>Харков </p>
+              <a href="">www.hrk.aero/uk</a>
+            </li>            
+            <li>
+              <p>Одеса </p>
+              <a href="">www.odessa.aero/uk</a>
+            </li>
+            <li>
+              <p>Днепр</p>
+              <a href="">www.dnk.aero/uk</a>
+            </li>
+            <li>
+              <p>Херсон</p>
+              <a href="">www.airport.kherson.ua</a>
+            </li>
+            <li>
+              <p>Винница</p>
+              <a href="">www.airvinnitsa.com</a>
+            </li>
+          </ul>
+          <div class="template">
+            <div class="title">
+              Проверьте наличие необходимых для путешествия документов:
+            </div>
+            <ul>
+              <li>Загранпаспорт (данные которого Вы указывали при бронировании)</li>
+              <li>Авиабилеты</li>
+              <li>Ваучер</li>
+              <li>Страховой полис</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <section class="telegram">
+    <div class="container">
+      <hr>
+      <div class="title">
+        <span>ХОТИТЕ ПОЛУЧАТЬ<br>УНИКАЛЬНЫЕ<br>ПРЕДЛОЖЕНИЯ?</span>
+      </div>
+      <div class="subtitle">
+        <span>Подпишитесь на наш канал в <br>TELEGRAM</span>
+      </div>
+    <div class="links">
+    <a href="https://t.me/warmtours">t.me/telegramh</a>
+    </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-lg-3 col-sm-6">
+          <div class="logo">
+            <img src="img/update/logo2.png" alt="">
+          </div>
+          <div class="copy">
+            <span>© 2018 Агенство индивидуального<br> Туризма, Агенство</span>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-3 col-12">
+          <div class="title">
+            <span>Услуги</span>
+          </div>
+          <ul>
+            <li><a href="#">Авиабилеты</a></li>
+            <li><a href="#">Страховка</a></li>
+            <li><a href="#">Визы</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-sm-3 col-12">
+          <div class="title">
+            <span>Информация</span>
+          </div>
+          <ul>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Преимущества</a></li>
+            <li><a href="#">Как купить?</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-5 col-md-7 col-sm-12">
+          <div class="title line">
+            <span>КОНТАКТЫ</span>
+            <hr>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-sm-6">
+              <div class="phone">
+                <div class="row no-gutters">
+                  <div class="phone-img">
+                    <img src="img/phone.png" alt="">
+                  </div>
+                  <div class="phone-num">
+                    <div class="num">
+                      <a href="tel:+380951797979"><span>+38 (095) 1-77-77-77</span></a>
+                    </div>
+                    <div class="num">
+                      <a href="tel:+380676648733"><span>+38 (067) 6-77-77-77</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="email">
+                <div class="row no-gutters">
+                  <div class="email-img">
+                    <img src="img/email.png" alt="">
+                  </div>
+                  <div class="email-text">
+                    <span>info@info.com.ua</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="loc">
+                <div class="row no-gutters">
+                  <div class="loc-img">
+                    <img src="img/loc.png" alt="">
+                  </div>
+                  <div class="loc-text">
+                    <span>г. Город,<br>улица улица улица</span>
+                    <div class="soc">
+                      <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-vk"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="overlay"></div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/tabulous.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery.nice-select.min.js"></script>
+  <script src="js/slimscroll.min.js"></script>
+  <script src="js/scripts.min.js"></script>
+</body>
+<body>
+  <header class="registration blue-header">
+    <div class="container">
+      <div class="header-top">
+        <div class="row no-gutters col-12 header-top_wrap">
+          <div class="logo">
+            <img src="img/update/logo.png" alt="Logotip">
+          </div>
+          <nav class="menu">
+            <ul>
+              <li class="active"><a href="#">ГОРЯЩИЕ ТУРЫ</a><hr></li>
+              <li><a href="#">СТРАНЫ</a><hr></li>
+              <li><a href="#">ИНФОРМАЦИЯ</a><hr></li>
+              <li><a href="#">КОНТАКТЫ</a><hr></li>
+            </ul>
+            <hr>
+          </nav>
+          <nav class="menu-resp order-sm-1">
+            <a class="menu-btn">
+              <span></span>
+            </a><br>
+            <ul>
+              <li class="active"><a href="#">ГОРЯЩИЕ ТУРЫ</a></li>
+              <li><a href="#">СТРАНЫ</a></li>
+              <li><a href="#">ИНФОРМАЦИЯ</a></li>
+              <li><a href="#">КОНТАКТЫ</a></li>
+            </ul>
+          </nav>
+          <div class="contacts">
+            <a href="#">
+              <img src="img/update/phone.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="img/update/viber.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="img/update/telegram.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="filter-overlay"></div>
+  <section class="bread registration">  
+    <div class="container">
+      <span>Главная</span><i class="fas fa-chevron-right"></i><span>Туры в Египет</span><i class="fas fa-chevron-right"></i><span>Movenpick</span><i class="fas fa-chevron-right"></i><span>Hotel Ibn Battuta Gate</span><i class="fas fa-chevron-right"></i><span>Оформление тура</span>
+    </div>  
+  </section>
+  <div class="registration-wrap">
+    <div class="container">
+      <section class="hotel-registration">
+        <div class="min-container">
+          <div class="row no-gutters justify-content-between align-items-center">
+            <div class="title col-auto">
+              <span class="text">Amwaj Blue Beach</span>
+              <span class="text-spec">5*</span>
+            </div>
+            <div class="tour-number col-auto">
+              <span>№ тура:   05052019 </span>
+            </div>
+            <div class="col-12 row no-gutters">
+              <div class="col-auto stars">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <div class="col-auto city">
+                <span>Египет, Сома Бей</span>
+              </div>
+            </div>
+          </div>
+          <div class="row no-gutters hotel-block">
+            <div class="col-lg-5">
+              <div class="hotel-img">
+                <img src="img/hotel-registration/hotel-img.png" alt="">
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="hotel-info">
+                <div class="row no-gutters block-info justify-content-between">
+                  <div class="col-auto">
+                    <div class="row no-gutters">
+                      <div class="icon col-auto">
+                        <img src="img/calendarb.png" alt="">
+                      </div>
+                      <div class="info-text col-auto">
+                        <div class="title blue">
+                          <span>Дата отправления:</span>
+                        </div>
+                        <div class="text">
+                          <span>25.05.2018</span>&nbsp;&nbsp;&#45;&nbsp;&nbsp;<span class="days">НА 7 НОЧЕЙ</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="row no-gutters">
+                      <div class="icon col-auto">
+                        <img class="man-blue" src="img/hotel-registration/peoplegBlue.png" alt="">
+                      </div>
+                      <div class="info-text col-auto">
+                        <span class="text">
+                          за<span class="sum-peoples"> 2х</span> взрослых
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row no-gutters block-info justify-content-between">
+                  <div class="col-auto">
+                    <div class="row no-gutters">
+                      <div class="icon col-auto">
+                        <img src="img/planeb.png" alt="">
+                      </div>
+                      <div class="info-text col-auto">
+                        <div class="title blue">
+                          <span>Транспорт:</span>
+                        </div>
+                        <div class="text">
+                          <span>Авиа из Москвы</span>
+                        </div>
+                        <div class="text">
+                          <span>Авиа из Ростова</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="row no-gutters">
+                      <div class="icon col-auto">
+                        <img src="img/securityb.png" alt="">
+                      </div>
+                      <div class="info-text col-auto">
+                        <div class="title blue">
+                          <span>ВКЛЮЧЕНО:</span>
+                        </div>
+                        <div class="text">
+                          <span>Страховка </span>
+                        </div>
+                        <div class="text">
+                          <span>Трансфер</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row no-gutters block-info justify-content-between">
+                  <div class="col-auto">
+                    <div class="row no-gutters">
+                      <div class="icon col-auto">
+                        <img src="img/foodo.png" alt="">
+                      </div>
+                      <div class="info-text col-auto">
+                        <div class="title orange">
+                          <span>Питание:</span>
+                        </div>
+                        <div class="text">
+                          <span>Все включено</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="row no-gutters">
+                      <div class="icon col-auto">
+                        <img src="img/roomo.png" alt="">
+                      </div>
+                      <div class="info-text col-auto">
+                        <div class="title orange">
+                          <span>Тип комнаты:</span>
+                        </div>
+                        <div class="text">
+                          <span>Standard Room</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>   
+      </section>
+      <div class="sidebar-registration">
+        <div class="header">
+          <span>Гарантия лучшей цены</span>
+        </div>
+        <div class="content">
+          <div class="price">
+            <span class="comment">
+              К оплате<br>
+              всего:
+            </span>
+            <span class="sum">
+              $ 1 600
+            </span>
+          </div>
+          <a class="btn">забронировать ТУР</a>
+          <div class="counter">
+            <div class="time">
+              <p class="time__timer">05<span>:</span>12<span>:</span>15</p>
+              <p class="time__comment">
+                <span>дней</span>
+                <span>час.</span>
+                <span>мин.</span>
+              </p>
+            </div>
+            <div class="comment">
+              <span>
+                Успей <br>
+                купить
+              </span>
+            </div>
+          </div>
+          <ul class="services">
+            <li>
+              <span>
+                После оформления и оплаты<br>
+                бронирование начнется<br>
+                автоматически
+              </span>
+            </li>
+            <li>
+              <span>
+                О подтверждении услуг мы<br>
+                сообщим вам по СМС, почте<br>
+                или по телефону
+              </span>
+            </li>
+            <li>
+              <span>
+                Документы будут сформир. <br>
+                в электронном виде и<br>
+                отправлены на почту
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section class="form-registration">
+        <div class="min-container">
+          <form action="">
+            <div class="tourist-data row no-gutters">
+              <div class="title col-12">
+                <span>ДАННЫЕ О ТУРИСТАХ</span>
+              </div>
+              <div class="col-12 wrap-input">
+                <input type="text" placeholder="Ваше Имя">
+                <input type="text" placeholder="Ваш email">
+                <input type="text" placeholder="Ваш телефон">
+              </div>
+            </div>
+            <div class="pasport-data row no-gutters">
+              <div class="title col-12">
+                <span>паспортные данные</span>
+              </div>
+              <div class="pasport-data__choise col-12">
+                <label>
+                  <input type="radio" name="myradio" value="0" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+                  <span>Прикрепить фото паспорта</span>
+                </label>
+                <label>
+                  <input type="radio" name="myradio" value="1" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+                  <span>Введу данные вручную</span>
+                </label>
+                <label>
+                  <input type="radio" name="myradio" value="2" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+                  <span>Предоставлю данные позже</span>
+                </label>
+              </div>
+              <div class="pasport-data__file col-12">
+                <div class="img-wrap">
+                  <img src="img/hotel-registration/pasport-foto.png" alt="">
+                </div>
+                <div class="text-wrap">
+                  <label>
+                    <input type="file">
+                    <span class="file-btn">Прикрепить фото</span>
+                  </label>
+                  <div class="comment">
+                    <span>
+                      поддерживаемые форматы: jpg, png, pdf. <br>
+                      размер изображения до 10 mb
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="pasport-data__confirmation col-12">
+                <label>
+                  <input type="checkbox">
+                  <span>
+                    С Уловиями договора оферты и договора с туроператором ознакомлен и согласен
+                  </span>
+                </label>
+              </div>
+              <div class="pasport-data__btn col-12">
+                <a class="btn">забронировать ТУР</a>
+                <div class="comment">
+                  <span>
+                    Внимание,тур будет забронирован после внесения данных
+                    всех участников тура
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="air-flight row no-gutters">
+              <div class="title col-12">
+                <span>Авиаперелет</span>
+              </div>
+              <div class="air-flight__item col-12">
+                <div class="comment">
+                  <span>Перелет туда:</span>
+                </div>
+                <div class="flight">
+                  <div class="flight-title">
+                    <span>
+                      19 мая, нд 16:20 Киев / БОРИСПОЛЬ ТЕРМИНАЛ-Д -> Шарм Эль...
+                    </span>
+                  </div>
+                  <div class="arrow">
+                    <span class="fa fa-angle-down"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="air-flight__item col-12">
+                <div class="comment">
+                  <span>Обратно :</span>
+                </div>
+                <div class="flight">
+                  <div class="flight-title">
+                    <span>
+                      26 мая, нд 16:10 Шарм Эль Шейх / РАС НАЗРАНИ ОФИРА -> Киев...
+                    </span>
+                  </div>
+                  <div class="arrow">
+                    <span class="fa fa-angle-down"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="transfer-insurance row no-gutters">
+              <div class="title col-12">
+                <span>Трансфер и страховка</span>
+              </div>
+              <div class="col-12">
+                <div class="transfer-insurance__item transfer">
+                  <p>
+                    Трансфер <span>(включен)</span> :  <span>19 мая</span> Аэропорт  -  Отель   и   <span>26 мая</span> Отель  -  Аэропорт
+                  </p>
+                </div>
+                <div class="transfer-insurance__item insurance">
+                  <p>
+                    Страховка:  Медицинская страховка <span>включена</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="payment-methods row no-gutters">
+              <div class="title col-12">
+                <span>Способы оплаты</span>
+              </div>
+              <div class="payment-methods__choise col-12">
+                <div class="card-best">
+                  <label>
+                    <input type="radio" name="radio" value="00" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+                    <span>Оплатить картой</span>
+                  </label>
+                  <span class="best">best</span>
+                </div>
+                <label>
+                  <input type="radio" name="radio" value="11" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+                  <span>50% предоплаты (картой)</span>
+                </label>
+                <label>
+                  <input type="radio" name="radio" value="22" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;">
+                  <span>Наличными в офисе</span>
+                </label>
+              </div>
+              <div class="text-wrap col-12">
+                <div class="text-wrap__item">
+                  <span>
+                    Choro tollit appellantur te eum. Ex cum soluta maluisset <br>elaboraret, ea sensibus repudiandae intellegebat eos, <br>
+                    ius etiam ocurreret incorrupte.
+                  </span>
+                </div>
+                <div class="text-wrap__item">
+                  <span>
+                    No vero graeci aperiam ius, ex nulla doctus <br>qui. Pri vidit nominavi ex. Te mei eripuit <br>neglegentur.
+                  </span>
+                </div>
+              </div>
+              <div class="logo-wrap col-12">
+                <img src="img/hotel-registration/visaColor.png" alt="">
+                <img src="img/hotel-registration/masterCardColor.png" alt="">
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </div>
+  <section class="reviews reviews-registration">
+    <div class="container title">
+      <div class="row no-gutters justify-content-center">
+        <div class="title">
+          <span class="blue">Наши счастливые </span>
+          <span class="orange">туристы</span>
+        </div>
+        <div class="w-100"></div>
+        <hr>
+        <div class="w-100"></div>
+        <span class="best">Отзывы от наших туристов в Instagram</span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row no-gutters inst-reviews">
+        <div class="inst-reviews__item col-md-6 col-xl-4">
+          <div class="header">
+            <div class="user-img" style="background-image:url(img/update/reviews/circle-img1.png)"></div>
+            <div class="user-info">
+              <p class="user-name">travelann</p>
+              <p class="user-city">Phuket...</p>
+            </div>
+            <a href="#" class="user-btn">в профиль</a>
+          </div>
+          <div style="background-image:url(img/update/reviews/big-img1.png);" class="main-img"></div>
+          <div class="footer">
+            <div class="icons-row">
+              <img class="icon-like" src="img/update/reviews/like.png" alt="">
+              <img class="icon-comment" src="img/update/reviews/comment.png" alt="">
+              <img class="icon-saved"  src="img/update/reviews/saved.png" alt="">
+            </div>
+            <div class="likes">
+              <p>200 отметок “Нравится”</p>
+            </div>
+            <div class="comment">
+              <p><span>travelann </span>Per an rebum harum regione, tempor qualisque ei ius, ne nobis corpora definitiones sea....</p>
+            </div>
+          </div>
+        </div>
+        <div class="inst-reviews__item col-md-6 col-xl-4">
+          <div class="header">
+            <div class="user-img" style="background-image:url(img/update/reviews/circle-img2.png)"></div>
+            <div class="user-info">
+              <p class="user-name">travelann</p>
+              <p class="user-city">Phuket...</p>
+            </div>
+            <a href="#" class="user-btn">в профиль</a>
+          </div>
+          <div style="background-image:url(img/update/reviews/big-img2.png);" class="main-img"></div>
+          <div class="footer">
+            <div class="icons-row">
+              <img class="icon-like" src="img/update/reviews/like.png" alt="">
+              <img class="icon-comment" src="img/update/reviews/comment.png" alt="">
+              <img class="icon-saved"  src="img/update/reviews/saved.png" alt="">
+            </div>
+            <div class="likes">
+              <p>200 отметок “Нравится”</p>
+            </div>
+            <div class="comment">
+              <p><span>travelann </span>Per an rebum harum regione, tempor qualisque ei ius, ne nobis corpora definitiones sea....</p>
+            </div>
+          </div>
+        </div>
+        <div class="inst-reviews__item col-md-6 col-xl-4">
+          <div class="header">
+            <div class="user-img" style="background-image:url(img/update/reviews/circle-img3.png)"></div>
+            <div class="user-info">
+              <p class="user-name">travelann</p>
+              <p class="user-city">Phuket...</p>
+            </div>
+            <a href="#" class="user-btn">в профиль</a>
+          </div>
+          <div style="background-image:url(img/update/reviews/big-img3.png);" class="main-img"></div>
+          <div class="footer">
+            <div class="icons-row">
+              <img class="icon-like" src="img/update/reviews/like.png" alt="">
+              <img class="icon-comment" src="img/update/reviews/comment.png" alt="">
+              <img class="icon-saved"  src="img/update/reviews/saved.png" alt="">
+            </div>
+            <div class="likes">
+              <p>200 отметок “Нравится”</p>
+            </div>
+            <div class="comment">
+              <p><span>travelann </span>Per an rebum harum regione, tempor qualisque ei ius, ne nobis corpora definitiones sea....</p>
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <hr class="left">
+          <a href="#" class="btn">
+            <span href="#">Показать еще</span>
+            <img src="img/update/reviews/btn-reviews.png" alt="">
+          </a>
+          <hr class="right">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contacts-help contacts-help-registration">
+    <div class="container">
+      <div class="contacts-wrap">
+        <div class="text-wrap">
+          <p class="title">Нужна помощь в подборе тура?</p>
+          <p class="desc">Поможем Вам в подборе и оформлении тура</p>
+        </div>
+        <div class="links-wrap">
+          <a href="#">
+            <img src="img/update/viber-0.png" alt="">
+          </a>
+          <a href="#">
+            <img src="img/update/telegram-0.png" alt="">
+          </a>
+          <a href="#">
+            <img src="img/update/tel-0.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="telegram">
+    <div class="container">
+      <hr>
+      <div class="title">
+        <span>ХОТИТЕ ПОЛУЧАТЬ<br>УНИКАЛЬНЫЕ<br>ПРЕДЛОЖЕНИЯ?</span>
+      </div>
+      <div class="subtitle">
+        <span>Подпишитесь на наш канал в <br>TELEGRAM</span>
+      </div>
+    <div class="links">
+    <a href="https://t.me/warmtours">t.me/telegramh</a>
+    </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-lg-3 col-sm-6">
+          <div class="logo">
+            <img src="img/update/logo2.png" alt="">
+          </div>
+          <div class="copy">
+            <span>© 2018 Агенство индивидуального<br> Туризма, Агенство</span>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-3 col-12">
+          <div class="title">
+            <span>Услуги</span>
+          </div>
+          <ul>
+            <li><a href="#">Авиабилеты</a></li>
+            <li><a href="#">Страховка</a></li>
+            <li><a href="#">Визы</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-sm-3 col-12">
+          <div class="title">
+            <span>Информация</span>
+          </div>
+          <ul>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Преимущества</a></li>
+            <li><a href="#">Как купить?</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-5 col-md-7 col-sm-12">
+          <div class="title line">
+            <span>КОНТАКТЫ</span>
+            <hr>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-sm-6">
+              <div class="phone">
+                <div class="row no-gutters">
+                  <div class="phone-img">
+                    <img src="img/phone.png" alt="">
+                  </div>
+                  <div class="phone-num">
+                    <div class="num">
+                      <a href="tel:+380951797979"><span>+38 (095) 1-77-77-77</span></a>
+                    </div>
+                    <div class="num">
+                      <a href="tel:+380676648733"><span>+38 (067) 6-77-77-77</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="email">
+                <div class="row no-gutters">
+                  <div class="email-img">
+                    <img src="img/email.png" alt="">
+                  </div>
+                  <div class="email-text">
+                    <span>info@info.com.ua</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="loc">
+                <div class="row no-gutters">
+                  <div class="loc-img">
+                    <img src="img/loc.png" alt="">
+                  </div>
+                  <div class="loc-text">
+                    <span>г. Город,<br>улица улица улица</span>
+                    <div class="soc">
+                      <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-vk"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="overlay"></div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/tabulous.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery.nice-select.min.js"></script>
+  <script src="js/slimscroll.min.js"></script>
+  <script src="js/scripts.min.js"></script>
+</body>
+<body>
+  <header class="thanks blue-header">
+    <div class="container">
+      <div class="header-top">
+        <div class="row no-gutters col-12 header-top_wrap">
+          <div class="logo">
+            <img src="img/update/logo.png" alt="Logotip">
+          </div>
+          <nav class="menu">
+            <ul>
+              <li class="active"><a href="#">ГОРЯЩИЕ ТУРЫ</a><hr></li>
+              <li><a href="#">СТРАНЫ</a><hr></li>
+              <li><a href="#">ИНФОРМАЦИЯ</a><hr></li>
+              <li><a href="#">КОНТАКТЫ</a><hr></li>
+            </ul>
+            <hr>
+          </nav>
+          <nav class="menu-resp order-sm-1">
+            <a class="menu-btn">
+              <span></span>
+            </a><br>
+            <ul>
+              <li class="active"><a href="#">ГОРЯЩИЕ ТУРЫ</a></li>
+              <li><a href="#">СТРАНЫ</a></li>
+              <li><a href="#">ИНФОРМАЦИЯ</a></li>
+              <li><a href="#">КОНТАКТЫ</a></li>
+            </ul>
+          </nav>
+          <div class="contacts">
+            <a href="#">
+              <img src="img/update/phone.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="img/update/viber.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="img/update/telegram.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="filter-overlay"></div>
+  <section class="bread thanks">  
+    <div class="container">
+      <span>Главная</span><i class="fas fa-chevron-right"></i><span>Туры в Египет</span><i class="fas fa-chevron-right"></i><span>Movenpick</span><i class="fas fa-chevron-right"></i><span>Hotel Ibn Battuta Gate</span><i class="fas fa-chevron-right"></i><span>Оформление тура</span><i class="fas fa-chevron-right"></i><span>Спасибо за заказ</span>
+    </div>  
+  </section>
+  <section class="block-thanks">
+    <div class="container">
+      <div class="block-thanks__wrap">
+        <div class="img-wrap">
+          <img src="img/thanksTwo/bigFinger.png" alt="">
+        </div>
+        <div class="text-wrap">
+          <h3>
+            Ваш тур успешно оплачен !
+            Спасибо, что вы с нами !
+          </h3>
+          <p>
+            На электронную почту вы получите
+            письмо с номером заказа, а также
+            пакет документов за несколько суток
+            до вылета для печати
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="redirection-thanks">
+    <div class="container">
+      <div class="redirection-thanks__wrap">
+        <hr>
+        <div class="title">
+          <span>ЧТО ДАЛЬШЕ?</span>
+        </div>
+        <div class="subtitle">
+          <span>
+            Мы собрали для Вас всю необходимую информацию<br>
+            в разделе “Как происходит путешествие”
+          </span>
+        </div>
+        <div class="links">
+          <a href="#">Перейти в раздел</a>
+        </div>
+        <p class="comment-item">Что взять в поездку?</p>
+        <p class="comment-item second">А виза нужна?</p>
+      </div>
+    </div>
+  </section>
+  <section class="review-thanks">
+    <div class="container title">
+      <div class="row no-gutters justify-content-center">
+        <div class="title">
+          <span class="blue">Ваше </span>
+          <span class="orange">мнение</span>
+        </div>
+        <div class="w-100"></div>
+        <hr>
+        <div class="w-100"></div>
+        <span class="best">
+          At pri indoctum iracundia, doming scripta in vis. Has saepe moderatius <br>
+          appellantur ex, sed clita volutpat an, an sea veritus apeirian. <br>
+          An pri quas prima signiferumque.
+        </span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="review-block">
+        <form action="#">
+          <input type="text" placeholder="Ваше Имя">
+          <input type="text" placeholder="Ваш email">
+          <input class="btn" type="submit" value="ОТПРАВИТЬ">
+          <textarea name="" id="" placeholder="Ваше сообщение"></textarea>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="contacts-help">
+    <div class="container">
+      <div class="contacts-wrap">
+        <div class="text-wrap">
+          <p class="title">Возникли вопросы?</p>
+          <p class="desc">Мы всегда с Вами на связи!</p>
+        </div>
+        <div class="links-wrap">
+          <a href="#">
+            <img src="img/update/viber-0.png" alt="">
+          </a>
+          <a href="#">
+            <img src="img/update/telegram-0.png" alt="">
+          </a>
+          <a href="#">
+            <img src="img/update/tel-0.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="button">
+        <hr class="left">
+        <a href="#" class="btn">
+          <span href="#">Вернуться на главную</span>
+          <img src="img/wave.png" alt="">
+        </a>
+        <hr class="right">
+      </div>
+    </div>
+  </section>
+  <section class="telegram">
+    <div class="container">
+      <hr>
+      <div class="title">
+        <span>ХОТИТЕ ПОЛУЧАТЬ<br>УНИКАЛЬНЫЕ<br>ПРЕДЛОЖЕНИЯ?</span>
+      </div>
+      <div class="subtitle">
+        <span>Подпишитесь на наш канал в <br>TELEGRAM</span>
+      </div>
+    <div class="links">
+    <a href="https://t.me/warmtours">t.me/telegramh</a>
+    </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-lg-3 col-sm-6">
+          <div class="logo">
+            <img src="img/update/logo2.png" alt="">
+          </div>
+          <div class="copy">
+            <span>© 2018 Агенство индивидуального<br> Туризма, Агенство</span>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-3 col-12">
+          <div class="title">
+            <span>Услуги</span>
+          </div>
+          <ul>
+            <li><a href="#">Авиабилеты</a></li>
+            <li><a href="#">Страховка</a></li>
+            <li><a href="#">Визы</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-sm-3 col-12">
+          <div class="title">
+            <span>Информация</span>
+          </div>
+          <ul>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Преимущества</a></li>
+            <li><a href="#">Как купить?</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-5 col-md-7 col-sm-12">
+          <div class="title line">
+            <span>КОНТАКТЫ</span>
+            <hr>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-sm-6">
+              <div class="phone">
+                <div class="row no-gutters">
+                  <div class="phone-img">
+                    <img src="img/phone.png" alt="">
+                  </div>
+                  <div class="phone-num">
+                    <div class="num">
+                      <a href="tel:+380951797979"><span>+38 (095) 1-77-77-77</span></a>
+                    </div>
+                    <div class="num">
+                      <a href="tel:+380676648733"><span>+38 (067) 6-77-77-77</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="email">
+                <div class="row no-gutters">
+                  <div class="email-img">
+                    <img src="img/email.png" alt="">
+                  </div>
+                  <div class="email-text">
+                    <span>info@info.com.ua</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="loc">
+                <div class="row no-gutters">
+                  <div class="loc-img">
+                    <img src="img/loc.png" alt="">
+                  </div>
+                  <div class="loc-text">
+                    <span>г. Город,<br>улица улица улица</span>
+                    <div class="soc">
+                      <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-vk"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="overlay"></div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/tabulous.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery.nice-select.min.js"></script>
+  <script src="js/slimscroll.min.js"></script>
+  <script src="js/scripts.min.js"></script>
+</body>
+</html>
